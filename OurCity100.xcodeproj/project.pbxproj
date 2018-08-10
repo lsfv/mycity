@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		CDC92832211D18740071D16E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC92831211D18740071D16E /* main.m */; };
 		CDC92835211D18740071D16E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC92834211D18740071D16E /* AppDelegate.m */; };
-		CDC92838211D18740071D16E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC92837211D18740071D16E /* ViewController.m */; };
-		CDC9283B211D18740071D16E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC92839211D18740071D16E /* Main.storyboard */; };
 		CDC9283D211D18740071D16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC9283C211D18740071D16E /* Assets.xcassets */; };
 		CDC92840211D18740071D16E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC9283E211D18740071D16E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,9 +18,6 @@
 		CDC92831211D18740071D16E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDC92833211D18740071D16E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDC92834211D18740071D16E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CDC92836211D18740071D16E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDC92837211D18740071D16E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CDC9283A211D18740071D16E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDC9283C211D18740071D16E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC9283F211D18740071D16E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC92841211D18740071D16E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,25 +53,182 @@
 		CDC9282F211D18740071D16E /* OurCity100 */ = {
 			isa = PBXGroup;
 			children = (
-				CDC92833211D18740071D16E /* AppDelegate.h */,
-				CDC92834211D18740071D16E /* AppDelegate.m */,
-				CDC92836211D18740071D16E /* ViewController.h */,
-				CDC92837211D18740071D16E /* ViewController.m */,
-				CDC92839211D18740071D16E /* Main.storyboard */,
-				CDC9283C211D18740071D16E /* Assets.xcassets */,
-				CDC9283E211D18740071D16E /* LaunchScreen.storyboard */,
-				CDC92841211D18740071D16E /* Info.plist */,
-				CDC92830211D18740071D16E /* Supporting Files */,
+				CDC92864211D1AF10071D16E /* Model */,
+				CDC9286E211D1D550071D16E /* BLL */,
+				CDC92868211D1BF00071D16E /* Function */,
+				CDC9285C211D19E90071D16E /* APP */,
 			);
 			path = OurCity100;
 			sourceTree = "<group>";
 		};
-		CDC92830211D18740071D16E /* Supporting Files */ = {
+		CDC9285C211D19E90071D16E /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				CDC92863211D1A820071D16E /* Resource */,
+				CDC92862211D1A770071D16E /* SourceCode */,
+			);
+			name = APP;
+			sourceTree = "<group>";
+		};
+		CDC9285D211D19F40071D16E /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				CDC92831211D18740071D16E /* main.m */,
+				CDC92833211D18740071D16E /* AppDelegate.h */,
+				CDC92834211D18740071D16E /* AppDelegate.m */,
 			);
-			name = "Supporting Files";
+			name = Start;
+			sourceTree = "<group>";
+		};
+		CDC9285E211D1A130071D16E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CDC9285F211D1A200071D16E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		CDC92860211D1A370071D16E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		CDC92861211D1A420071D16E /* My */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
+		CDC92862211D1A770071D16E /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				CDC92869211D1C170071D16E /* APPHelper */,
+				CDC92865211D1B100071D16E /* view&vc */,
+			);
+			name = SourceCode;
+			sourceTree = "<group>";
+		};
+		CDC92863211D1A820071D16E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9283C211D18740071D16E /* Assets.xcassets */,
+				CDC92841211D18740071D16E /* Info.plist */,
+				CDC9283E211D18740071D16E /* LaunchScreen.storyboard */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		CDC92864211D1AF10071D16E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDC92866211D1B920071D16E /* models */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CDC92865211D1B100071D16E /* view&vc */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9286A211D1C3E0071D16E /* ReusedPage */,
+				CDC9285D211D19F40071D16E /* Start */,
+				CDC9285E211D1A130071D16E /* Main */,
+				CDC9285F211D1A200071D16E /* Message */,
+				CDC92860211D1A370071D16E /* Order */,
+				CDC92861211D1A420071D16E /* My */,
+			);
+			name = "view&vc";
+			sourceTree = "<group>";
+		};
+		CDC92866211D1B920071D16E /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		CDC92867211D1BA60071D16E /* modelManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = modelManager;
+			sourceTree = "<group>";
+		};
+		CDC92868211D1BF00071D16E /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9286D211D1C8D0071D16E /* RefFuntion */,
+				CDC9286C211D1C7C0071D16E /* MYFuntion */,
+				CDC9286B211D1C700071D16E /* MYUI */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		CDC92869211D1C170071D16E /* APPHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = APPHelper;
+			sourceTree = "<group>";
+		};
+		CDC9286A211D1C3E0071D16E /* ReusedPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ReusedPage;
+			sourceTree = "<group>";
+		};
+		CDC9286B211D1C700071D16E /* MYUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MYUI;
+			sourceTree = "<group>";
+		};
+		CDC9286C211D1C7C0071D16E /* MYFuntion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MYFuntion;
+			sourceTree = "<group>";
+		};
+		CDC9286D211D1C8D0071D16E /* RefFuntion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RefFuntion;
+			sourceTree = "<group>";
+		};
+		CDC9286E211D1D550071D16E /* BLL */ = {
+			isa = PBXGroup;
+			children = (
+				CDC92870211D1E7B0071D16E /* GblData */,
+				CDC9286F211D1D9A0071D16E /* LocalData */,
+				CDC92867211D1BA60071D16E /* modelManager */,
+			);
+			name = BLL;
+			sourceTree = "<group>";
+		};
+		CDC9286F211D1D9A0071D16E /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LocalData;
+			sourceTree = "<group>";
+		};
+		CDC92870211D1E7B0071D16E /* GblData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GblData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +292,6 @@
 			files = (
 				CDC92840211D18740071D16E /* LaunchScreen.storyboard in Resources */,
 				CDC9283D211D18740071D16E /* Assets.xcassets in Resources */,
-				CDC9283B211D18740071D16E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC92838211D18740071D16E /* ViewController.m in Sources */,
 				CDC92835211D18740071D16E /* AppDelegate.m in Sources */,
 				CDC92832211D18740071D16E /* main.m in Sources */,
 			);
@@ -160,14 +310,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CDC92839211D18740071D16E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDC9283A211D18740071D16E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CDC9283E211D18740071D16E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
