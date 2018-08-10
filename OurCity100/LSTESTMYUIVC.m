@@ -30,6 +30,7 @@
 
 -(void)SetupBtncity
 {
+    [self.myview.btn_city setTitle:[LSBLLLocalData GetCityNameById:self.mysetting.mycity allcitys:gbl_citys] forState:UIControlStateNormal];
     [self.myview.btn_city addTarget:self action:@selector(PopCity) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -42,6 +43,7 @@
 -(void)OnClickOK:(NSString *)mycity sender:(LSFUNUIPopupCityVC *)sender
 {
     self.mysetting.mycity=mycity;
+    [self.myview.btn_city setTitle:[LSBLLLocalData GetCityNameById:self.mysetting.mycity allcitys:gbl_citys] forState:UIControlStateNormal];
     [self UpdateSetting:self.mysetting];
 }
 

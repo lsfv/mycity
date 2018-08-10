@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OurCity100/LSTESTMYUIVC.m"
-            timestampString = "555605194.739202"
+            timestampString = "555607141.505082"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "-OnClickOK:sender:"
             landmarkType = "7">
          </BreakpointContent>

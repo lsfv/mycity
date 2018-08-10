@@ -28,4 +28,5 @@
 +(NSMutableArray<struct_city*>*) GetProvinces:(NSMutableArray<struct_city*>*)allcitys;
 +(NSMutableArray<struct_city*>*) GetcitysFromProvince:(struct_city *)provincecode allcitys:(NSMutableArray<struct_city*>*)allcitys;
 +(void)GetIndexFromCode:(NSString *)code province:(NSInteger *)province city:(NSInteger*)city allcitys:(NSMutableArray<NSMutableArray<struct_city*>*> *)allcitys;
++(NSString*)GetCityNameById:(NSString*)codeid allcitys:(NSMutableArray<NSMutableArray<struct_city*>*> *)allcitys;
 @end

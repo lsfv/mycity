@@ -136,4 +136,21 @@
     }
 }
 
++(NSString*)GetCityNameById:(NSString*)codeid allcitys:(NSMutableArray<NSMutableArray<struct_city*>*> *)allcitys
+{
+    NSString *ret=@"";
+    int pc=(int)allcitys.count;
+    for (int i=0; i<pc; i++) {
+        int cc=(int)allcitys[i].count;
+        
+        for(int j=0;j<cc;j++)
+        {
+            if(allcitys[i][j].codeID==codeid)
+            {
+                ret=allcitys[i][j].name;
+            }
+        }
+    }
+    return ret;
+}
 @end
