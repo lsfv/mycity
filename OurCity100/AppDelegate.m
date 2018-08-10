@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "APPFrameWork.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    APPFrameWork *appsetup=[APPFrameWork new];
+    [appsetup SetupApp:self.window];
     return YES;
 }
 
