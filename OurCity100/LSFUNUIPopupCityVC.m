@@ -36,6 +36,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self SetupViewPicker];
+    
+    
 }
 
 
@@ -49,6 +51,11 @@
     [_myview.view_main.btn_cancel addTarget:self action:@selector(OnClickCancel:) forControlEvents:UIControlEventTouchUpInside];
     [_myview.view_main.btn_ok addTarget:self action:@selector(OnClickOk:) forControlEvents:UIControlEventTouchUpInside];
     [LSBLLLocalData GetIndexFromCode:self.citycode province:&_index_p city:&_index_c allcitys:self.citys];
+}
+
+-(void)SetupData
+{
+    
 }
 
 -(void)OnClickCancel:(UIButton*)sender

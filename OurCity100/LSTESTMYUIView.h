@@ -11,4 +11,5 @@
 
 @interface LSTESTMYUIView : UIView
 @property(nonatomic)UIButton *btn_city;
+@property(nonatomic)UIButton *btn_date;
 @end

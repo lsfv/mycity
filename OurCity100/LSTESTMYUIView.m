@@ -16,6 +16,8 @@
     {
         _btn_city=[UIButton LSDefault:@"city" font:nil frontcolor:nil bgcolor:nil tag:1];
         [self addSubview:_btn_city];
+        _btn_city=[UIButton LSDefault:@"date" font:nil frontcolor:nil bgcolor:nil tag:2];
+        [self addSubview:_btn_city];
     }
     return self;
 }
@@ -29,6 +31,12 @@
 {
     [self.btn_city mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.and.left.offset(50);
+        make.width.equalTo(@50);
+        make.height.equalTo(@15);
+    }];
+    [self.btn_date mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.btn_city.mas_bottom).offset(5);
+        make.left.offset(50);
         make.width.equalTo(@50);
         make.height.equalTo(@15);
     }];

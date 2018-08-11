@@ -10,7 +10,7 @@
 #import "LSFUNUIPopupDateVIew.h"
 
 @class LSUIPopupDateVC;
-@protocol dpClick <NSObject>
+@protocol IdpClick <NSObject>
 -(void)OnClickOK:(NSDate*)timefrom timeto:(NSDate*)timeto sender:(LSUIPopupDateVC*)sender;
 @end
 
@@ -18,5 +18,5 @@
 @property(nonatomic)LSUIPopupDateVIew *myview;
 @property(nonatomic)NSDate *intime;
 @property(nonatomic)NSDate *outtime;
-@property(nonatomic)UIViewController<dpClick> *myhandle;
+@property(nonatomic)UIViewController<IdpClick> *myhandle;
 @end
