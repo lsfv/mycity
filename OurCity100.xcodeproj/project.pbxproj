@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD219F39211E6EB300B9679D /* LSUIPopupDateVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F38211E6EB300B9679D /* LSUIPopupDateVIew.m */; };
 		CD3FAD6A211D7E2F00933BF6 /* mycitys.json in Resources */ = {isa = PBXBuildFile; fileRef = CD3FAD69211D7E2F00933BF6 /* mycitys.json */; };
 		CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD6C211D877200933BF6 /* LSFun_Http.m */; };
 		CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD71211D8E9200933BF6 /* MJRefreshAutoFooter.m */; };
@@ -93,6 +94,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD219F37211E6EB300B9679D /* LSFUNUIPopupDateVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNUIPopupDateVIew.h; sourceTree = "<group>"; };
+		CD219F38211E6EB300B9679D /* LSUIPopupDateVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUIPopupDateVIew.m; sourceTree = "<group>"; };
 		CD3FAD69211D7E2F00933BF6 /* mycitys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycitys.json; sourceTree = "<group>"; };
 		CD3FAD6B211D877200933BF6 /* LSFun_Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFun_Http.h; sourceTree = "<group>"; };
 		CD3FAD6C211D877200933BF6 /* LSFun_Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFun_Http.m; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 		CD30E952211E604F00491989 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F37211E6EB300B9679D /* LSFUNUIPopupDateVIew.h */,
+				CD219F38211E6EB300B9679D /* LSUIPopupDateVIew.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -965,6 +970,7 @@
 				CD3FAE3C211D8E9300933BF6 /* UIImageView+HighlightedWebCache.m in Sources */,
 				CD3FAE39211D8E9300933BF6 /* UIImage+GIF.m in Sources */,
 				CD3FAE11211D8E9300933BF6 /* UIScrollView+MJExtension.m in Sources */,
+				CD219F39211E6EB300B9679D /* LSUIPopupDateVIew.m in Sources */,
 				CD3FAE23211D8E9300933BF6 /* MKAnnotationView+WebCache.m in Sources */,
 				CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */,
 				CD3FAE0D211D8E9300933BF6 /* MJRefreshStateHeader.m in Sources */,
