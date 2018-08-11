@@ -16,8 +16,8 @@
     {
         _btn_city=[UIButton LSDefault:@"city" font:nil frontcolor:nil bgcolor:nil tag:1];
         [self addSubview:_btn_city];
-        _btn_city=[UIButton LSDefault:@"date" font:nil frontcolor:nil bgcolor:nil tag:2];
-        [self addSubview:_btn_city];
+        _btn_date=[UIButton LSDefault:@"date" font:nil frontcolor:nil bgcolor:nil tag:2];
+        [self addSubview:_btn_date];
     }
     return self;
 }

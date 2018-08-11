@@ -284,6 +284,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD219F3D211E770500B9679D /* collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = collection;
+			sourceTree = "<group>";
+		};
 		CD30E951211E604700491989 /* date */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +582,7 @@
 		CD3FB7A0211DCE8A00933BF6 /* popupview */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F3D211E770500B9679D /* collection */,
 				CD30E951211E604700491989 /* date */,
 				CD3FB7A1211DCFC800933BF6 /* city */,
 				CD3FB79F211DCE7D00933BF6 /* baseview */,

@@ -8,12 +8,22 @@
 
 #import "LSFUNUIPopupDateVC.h"
 
-@interface LSUIPopupDateVC ()
+@interface LSFUNUIPopupDateVC ()
 
 @end
 
-@implementation LSUIPopupDateVC
+@implementation LSFUNUIPopupDateVC
 
+-(id)initWithP:(NSDate*)from to:(NSDate*)to handle:(UIViewController<IdpClick>*)handle
+{
+    if(self=[super init])
+    {
+        self.intime=from;
+        self.outtime=to;
+        self.myhandle=handle;
+    }
+    return self;
+}
 
 -(void)loadView
 {

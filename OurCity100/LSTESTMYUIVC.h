@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "LSTESTMYUIView.h"
 #import "LSFUNUIPopupCityVC.h"
+#import "LSFUNUIPopupDateVC.h"
 #import "LSBaseVC.h"
 
-@interface LSTESTMYUIVC : LSBaseVC<IPOPCITY>
+@interface LSTESTMYUIVC : LSBaseVC<IPOPCITY,IdpClick>
 @property(nonatomic)LSTESTMYUIView *myview;
 @end

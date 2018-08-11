@@ -8,10 +8,12 @@
 
 #import "LSTESTMYUIVC.h"
 #import "LSFUNUIPopupCityVC.h"
+#import "LSFUNUIPopupDateVC.h"
 #import "LSGBLVariable.h"
 
 @interface LSTESTMYUIVC ()
-
+@property(nonatomic)NSDate *myfrom;
+@property(nonatomic)NSDate *myto;
 @end
 
 @implementation LSTESTMYUIVC
@@ -25,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self SetupBtncity];
+    [self SetupDate];
     
 }
 
@@ -47,4 +50,21 @@
     [self UpdateSetting:self.mysetting];
 }
 
+
+-(void)SetupDate
+{
+    [self.myview.btn_date addTarget:self action:@selector(Popupdate) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)Popupdate
+{
+    LSFUNUIPopupDateVC *VC=[[LSFUNUIPopupDateVC alloc]initWithP:_myfrom to:_myto handle:self];
+    [self.navigationController presentViewController:VC animated:YES completion:nil];
+}
+
+-(void)OnClickOK:(NSDate *)timefrom timeto:(NSDate *)timeto sender:(LSFUNUIPopupDateVC *)sender
+{
+    _myfrom=timefrom;
+    _myto=timeto;
+}
 @end

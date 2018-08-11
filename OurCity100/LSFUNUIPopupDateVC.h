@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "LSFUNUIPopupDateVIew.h"
 
-@class LSUIPopupDateVC;
+@class LSFUNUIPopupDateVC;
 @protocol IdpClick <NSObject>
--(void)OnClickOK:(NSDate*)timefrom timeto:(NSDate*)timeto sender:(LSUIPopupDateVC*)sender;
+-(void)OnClickOK:(NSDate*)timefrom timeto:(NSDate*)timeto sender:(LSFUNUIPopupDateVC*)sender;
 @end
 
-@interface LSUIPopupDateVC : UIViewController
+@interface LSFUNUIPopupDateVC : UIViewController
+-(id)initWithP:(NSDate*)from to:(NSDate*)to handle:(UIViewController<IdpClick>*)handle;
 @property(nonatomic)LSUIPopupDateVIew *myview;
 @property(nonatomic)NSDate *intime;
 @property(nonatomic)NSDate *outtime;
