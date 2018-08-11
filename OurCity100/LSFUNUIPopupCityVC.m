@@ -15,10 +15,6 @@
 
 @implementation LSFUNUIPopupCityVC
 
-//@property(nonatomic)NSString *citycode;
-//@property(nonatomic)UIViewController<IPOPCITY> *myhandle;
-//@property(nonatomic)NSMutableArray<struct_city*>* provinces;
-//@property(nonatomic)NSMutableArray<NSMutableArray<struct_city*>*> *citys;
 
 -(id)initWithP:(NSString*)cityCode provinces:(NSMutableArray<struct_city*>*) provinces citys:(NSMutableArray<NSMutableArray<struct_city*>*> *)citys handle:(UIViewController<IPOPCITY>*)handle
 {
