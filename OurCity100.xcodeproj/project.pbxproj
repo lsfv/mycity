@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD219F39211E6EB300B9679D /* LSUIPopupDateVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F38211E6EB300B9679D /* LSUIPopupDateVIew.m */; };
+		CD219F3C211E6F4300B9679D /* LSFUNUIPopupDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F3B211E6F4300B9679D /* LSFUNUIPopupDateVC.m */; };
 		CD3FAD6A211D7E2F00933BF6 /* mycitys.json in Resources */ = {isa = PBXBuildFile; fileRef = CD3FAD69211D7E2F00933BF6 /* mycitys.json */; };
 		CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD6C211D877200933BF6 /* LSFun_Http.m */; };
 		CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD71211D8E9200933BF6 /* MJRefreshAutoFooter.m */; };
@@ -96,6 +97,8 @@
 /* Begin PBXFileReference section */
 		CD219F37211E6EB300B9679D /* LSFUNUIPopupDateVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNUIPopupDateVIew.h; sourceTree = "<group>"; };
 		CD219F38211E6EB300B9679D /* LSUIPopupDateVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUIPopupDateVIew.m; sourceTree = "<group>"; };
+		CD219F3A211E6F4300B9679D /* LSFUNUIPopupDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNUIPopupDateVC.h; sourceTree = "<group>"; };
+		CD219F3B211E6F4300B9679D /* LSFUNUIPopupDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFUNUIPopupDateVC.m; sourceTree = "<group>"; };
 		CD3FAD69211D7E2F00933BF6 /* mycitys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycitys.json; sourceTree = "<group>"; };
 		CD3FAD6B211D877200933BF6 /* LSFun_Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFun_Http.h; sourceTree = "<group>"; };
 		CD3FAD6C211D877200933BF6 /* LSFun_Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFun_Http.m; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 		CD30E953211E605600491989 /* control */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F3A211E6F4300B9679D /* LSFUNUIPopupDateVC.h */,
+				CD219F3B211E6F4300B9679D /* LSFUNUIPopupDateVC.m */,
 			);
 			name = control;
 			sourceTree = "<group>";
@@ -1019,6 +1024,7 @@
 				CD3FAE22211D8E9300933BF6 /* FLAnimatedImageView+WebCache.m in Sources */,
 				CDC9289B211D480E0071D16E /* LSBLLLocalData.m in Sources */,
 				CD3FAE1D211D8E9300933BF6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CD219F3C211E6F4300B9679D /* LSFUNUIPopupDateVC.m in Sources */,
 				CD3FAE10211D8E9300933BF6 /* NSBundle+MJRefresh.m in Sources */,
 				CD3FB7A6211DCFEC00933BF6 /* LSUIPopupCity.m in Sources */,
 				CD3FAE2B211D8E9300933BF6 /* SDWebImageCoderHelper.m in Sources */,
