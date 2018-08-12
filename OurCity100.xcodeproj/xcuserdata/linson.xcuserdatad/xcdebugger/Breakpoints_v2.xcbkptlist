@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OurCity100/LSTESTMYUIVC.m"
-            timestampString = "555644175.691116"
+            timestampString = "555796624.102366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "-OnClickOK:sender:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OurCity100/LSTESTMYUIVC.m"
+            timestampString = "555796624.102366"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-NumberOfBtns:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

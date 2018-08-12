@@ -11,7 +11,8 @@
 #import "LSFUNUIPopupCityVC.h"
 #import "LSFUNUIPopupDateVC.h"
 #import "LSBaseVC.h"
+#import "LSFUNPopupcvVC.h"
 
-@interface LSTESTMYUIVC : LSBaseVC<IPOPCITY,IdpClick>
+@interface LSTESTMYUIVC : LSBaseVC<IPOPCITY,IdpClick,IcvClick,IRowBtnsData>
 @property(nonatomic)LSTESTMYUIView *myview;
 @end

@@ -10,10 +10,13 @@
 #import "LSFUNUIPopupCityVC.h"
 #import "LSFUNUIPopupDateVC.h"
 #import "LSGBLVariable.h"
+#import "LSFUNPopupcvVC.h"
 
 @interface LSTESTMYUIVC ()
 @property(nonatomic)NSDate *myfrom;
 @property(nonatomic)NSDate *myto;
+@property(nonatomic)NSMutableArray<NSIndexPath *> *preselect;
+@property(nonatomic)NSArray<struct_btn*>* filterdata;
 @end
 
 @implementation LSTESTMYUIVC
@@ -28,7 +31,50 @@
     [super viewDidLoad];
     [self SetupBtncity];
     [self SetupDate];
+    [self Setupcv];
+    [self SetupRBtns];
     
+}
+
+-(void)SetupRBtns
+{
+    self.myview.btns_test.datasorceHandler=self;
+    self.filterdata=[LSBLLLocalData InitBardataHouse];
+    [self.myview.btns_test LoadDate];
+}
+
+-(NSInteger)NumberOfBtns:(LSFUNUIRowButtons *)LSEB
+{
+    return self.filterdata.count;
+}
+
+-(UIButton*)ButtonForIndex:(LSFUNUIRowButtons *)LSEB btnindex:(NSInteger)btnindex
+{
+    UIButton * ret=[UIButton LSDefault:self.filterdata[btnindex].btntext font:nil frontcolor:nil bgcolor:nil tag:self.filterdata[btnindex].btntag];
+    return ret;
+}
+
+-(void)Setupcv
+{
+    [self.myview.btn_cv addTarget:self action:@selector(Popupcv) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)Popupcv
+{
+    NSMutableArray<NSString*>* data=[NSMutableArray new];
+    [data addObject:@"abc1"];
+    [data addObject:@"abc2"];
+    [data addObject:@"abc3"];
+    [data addObject:@"abc4"];
+    [data addObject:@"abc5"];
+    
+    LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:self.preselect handle:self];
+    [self.navigationController presentViewController:vc animated:YES completion:nil];
+}
+
+-(void)OnCVClickOK:(NSMutableArray<NSIndexPath *> *)myChoose sender:(LSFUNPopupcvVC *)sender
+{
+    self.preselect=myChoose;
 }
 
 -(void)SetupBtncity

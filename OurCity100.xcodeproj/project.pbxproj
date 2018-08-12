@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		CD219F39211E6EB300B9679D /* LSUIPopupDateVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F38211E6EB300B9679D /* LSUIPopupDateVIew.m */; };
 		CD219F3C211E6F4300B9679D /* LSFUNUIPopupDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F3B211E6F4300B9679D /* LSFUNUIPopupDateVC.m */; };
+		CD219F43211E78D700B9679D /* LSUIPopupcvView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F42211E78D700B9679D /* LSUIPopupcvView.m */; };
+		CD219F46211E78E200B9679D /* LSPopcvCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F45211E78E200B9679D /* LSPopcvCell.m */; };
+		CD219F49211E792B00B9679D /* LSFUNPopupcvVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F48211E792B00B9679D /* LSFUNPopupcvVC.m */; };
+		CD219F4B211E8A0C00B9679D /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD219F4A211E8A0C00B9679D /* readme.rtf */; };
+		CD219F51211EF18500B9679D /* LSFUNUIRowButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F50211EF18500B9679D /* LSFUNUIRowButtons.m */; };
 		CD3FAD6A211D7E2F00933BF6 /* mycitys.json in Resources */ = {isa = PBXBuildFile; fileRef = CD3FAD69211D7E2F00933BF6 /* mycitys.json */; };
 		CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD6C211D877200933BF6 /* LSFun_Http.m */; };
 		CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD71211D8E9200933BF6 /* MJRefreshAutoFooter.m */; };
@@ -99,6 +104,15 @@
 		CD219F38211E6EB300B9679D /* LSUIPopupDateVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUIPopupDateVIew.m; sourceTree = "<group>"; };
 		CD219F3A211E6F4300B9679D /* LSFUNUIPopupDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNUIPopupDateVC.h; sourceTree = "<group>"; };
 		CD219F3B211E6F4300B9679D /* LSFUNUIPopupDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFUNUIPopupDateVC.m; sourceTree = "<group>"; };
+		CD219F41211E78D700B9679D /* LSUIPopupcvView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUIPopupcvView.h; sourceTree = "<group>"; };
+		CD219F42211E78D700B9679D /* LSUIPopupcvView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUIPopupcvView.m; sourceTree = "<group>"; };
+		CD219F44211E78E200B9679D /* LSPopcvCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPopcvCell.h; sourceTree = "<group>"; };
+		CD219F45211E78E200B9679D /* LSPopcvCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPopcvCell.m; sourceTree = "<group>"; };
+		CD219F47211E792B00B9679D /* LSFUNPopupcvVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNPopupcvVC.h; sourceTree = "<group>"; };
+		CD219F48211E792B00B9679D /* LSFUNPopupcvVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFUNPopupcvVC.m; sourceTree = "<group>"; };
+		CD219F4A211E8A0C00B9679D /* readme.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
+		CD219F4F211EF18500B9679D /* LSFUNUIRowButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNUIRowButtons.h; sourceTree = "<group>"; };
+		CD219F50211EF18500B9679D /* LSFUNUIRowButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFUNUIRowButtons.m; sourceTree = "<group>"; };
 		CD3FAD69211D7E2F00933BF6 /* mycitys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycitys.json; sourceTree = "<group>"; };
 		CD3FAD6B211D877200933BF6 /* LSFun_Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFun_Http.h; sourceTree = "<group>"; };
 		CD3FAD6C211D877200933BF6 /* LSFun_Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFun_Http.m; sourceTree = "<group>"; };
@@ -287,8 +301,47 @@
 		CD219F3D211E770500B9679D /* collection */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F40211E78C300B9679D /* cell */,
+				CD219F3F211E78B700B9679D /* control */,
+				CD219F3E211E78A800B9679D /* view */,
 			);
 			name = collection;
+			sourceTree = "<group>";
+		};
+		CD219F3E211E78A800B9679D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F41211E78D700B9679D /* LSUIPopupcvView.h */,
+				CD219F42211E78D700B9679D /* LSUIPopupcvView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		CD219F3F211E78B700B9679D /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F47211E792B00B9679D /* LSFUNPopupcvVC.h */,
+				CD219F48211E792B00B9679D /* LSFUNPopupcvVC.m */,
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		CD219F40211E78C300B9679D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F44211E78E200B9679D /* LSPopcvCell.h */,
+				CD219F45211E78E200B9679D /* LSPopcvCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		CD219F4C211EE63400B9679D /* RowBtns */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F4F211EF18500B9679D /* LSFUNUIRowButtons.h */,
+				CD219F50211EF18500B9679D /* LSFUNUIRowButtons.m */,
+			);
+			name = RowBtns;
 			sourceTree = "<group>";
 		};
 		CD30E951211E604700491989 /* date */ = {
@@ -622,6 +675,7 @@
 			children = (
 				CDC9282F211D18740071D16E /* OurCity100 */,
 				CDC9282E211D18740071D16E /* Products */,
+				CD219F4A211E8A0C00B9679D /* readme.rtf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -856,6 +910,7 @@
 		CDC9288A211D3A540071D16E /* MyDefineUI */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F4C211EE63400B9679D /* RowBtns */,
 				CD3FB7A0211DCE8A00933BF6 /* popupview */,
 			);
 			name = MyDefineUI;
@@ -965,6 +1020,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD219F4B211E8A0C00B9679D /* readme.rtf in Resources */,
 				CDC92840211D18740071D16E /* LaunchScreen.storyboard in Resources */,
 				CDC9283D211D18740071D16E /* Assets.xcassets in Resources */,
 				CD3FAE21211D8E9300933BF6 /* XRPlaceholder.png in Resources */,
@@ -981,11 +1037,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3FAE3C211D8E9300933BF6 /* UIImageView+HighlightedWebCache.m in Sources */,
+				CD219F46211E78E200B9679D /* LSPopcvCell.m in Sources */,
 				CD3FAE39211D8E9300933BF6 /* UIImage+GIF.m in Sources */,
 				CD3FAE11211D8E9300933BF6 /* UIScrollView+MJExtension.m in Sources */,
 				CD219F39211E6EB300B9679D /* LSUIPopupDateVIew.m in Sources */,
 				CD3FAE23211D8E9300933BF6 /* MKAnnotationView+WebCache.m in Sources */,
 				CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */,
+				CD219F43211E78D700B9679D /* LSUIPopupcvView.m in Sources */,
 				CD3FAE0D211D8E9300933BF6 /* MJRefreshStateHeader.m in Sources */,
 				CD3FAE3A211D8E9300933BF6 /* UIImage+MultiFormat.m in Sources */,
 				CDC9296F211D51B10071D16E /* APPFrameWrok.m in Sources */,
@@ -1035,6 +1093,7 @@
 				CD219F3C211E6F4300B9679D /* LSFUNUIPopupDateVC.m in Sources */,
 				CD3FAE10211D8E9300933BF6 /* NSBundle+MJRefresh.m in Sources */,
 				CD3FB7A6211DCFEC00933BF6 /* LSUIPopupCity.m in Sources */,
+				CD219F49211E792B00B9679D /* LSFUNPopupcvVC.m in Sources */,
 				CD3FAE2B211D8E9300933BF6 /* SDWebImageCoderHelper.m in Sources */,
 				CD3FAE28211D8E9300933BF6 /* SDImageCache.m in Sources */,
 				CD3FAE2A211D8E9300933BF6 /* SDWebImageCoder.m in Sources */,
@@ -1058,6 +1117,7 @@
 				CD3FAE0A211D8E9300933BF6 /* MJRefreshBackStateFooter.m in Sources */,
 				CD3FAE0F211D8E9300933BF6 /* MJRefreshConst.m in Sources */,
 				CD3FAE34211D8E9300933BF6 /* SDWebImagePrefetcher.m in Sources */,
+				CD219F51211EF18500B9679D /* LSFUNUIRowButtons.m in Sources */,
 				CD3FAE4D211DC11800933BF6 /* LSTESTMYUIVC.m in Sources */,
 				CD3FAE44211D96CA00933BF6 /* LSFUNUICategory.m in Sources */,
 			);

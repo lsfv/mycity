@@ -9,6 +9,7 @@
 #ifndef LSGBLVariable_h
 #define LSGBLVariable_h
 
+#import "LSModel_LocalStruct.h"
 extern int paddingtop;
 extern int paddingleft;
 extern int paddingright;
