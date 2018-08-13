@@ -14,6 +14,23 @@
 		CD219F49211E792B00B9679D /* LSFUNPopupcvVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F48211E792B00B9679D /* LSFUNPopupcvVC.m */; };
 		CD219F4B211E8A0C00B9679D /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD219F4A211E8A0C00B9679D /* readme.rtf */; };
 		CD219F51211EF18500B9679D /* LSFUNUIRowButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F50211EF18500B9679D /* LSFUNUIRowButtons.m */; };
+		CD219F572120D29E00B9679D /* LSTESTDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F562120D29E00B9679D /* LSTESTDataView.m */; };
+		CD219F5A21210B3300B9679D /* LSTableCellSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F5921210B3300B9679D /* LSTableCellSupplier.m */; };
+		CD219F5D21210CCB00B9679D /* LSTESTDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F5C21210CCB00B9679D /* LSTESTDataVC.m */; };
+		CD219F7A212110FA00B9679D /* VCategory_All.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F5F212110FA00B9679D /* VCategory_All.m */; };
+		CD219F7B212110FA00B9679D /* VCategory_Father.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F61212110FA00B9679D /* VCategory_Father.m */; };
+		CD219F7C212110FA00B9679D /* VCity.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F63212110FA00B9679D /* VCity.m */; };
+		CD219F7D212110FA00B9679D /* VGoods_Base_All.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F65212110FA00B9679D /* VGoods_Base_All.m */; };
+		CD219F7E212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F67212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.m */; };
+		CD219F7F212110FA00B9679D /* VGoods_FatherCategory_House_Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F69212110FA00B9679D /* VGoods_FatherCategory_House_Extend.m */; };
+		CD219F80212110FA00B9679D /* VGoods_FatherCategory_life_Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F6B212110FA00B9679D /* VGoods_FatherCategory_life_Extend.m */; };
+		CD219F81212110FA00B9679D /* VGoods_FatherCategory_Play_Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F6D212110FA00B9679D /* VGoods_FatherCategory_Play_Extend.m */; };
+		CD219F82212110FB00B9679D /* VSupplier_ALLCategory_Base.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F6F212110FA00B9679D /* VSupplier_ALLCategory_Base.m */; };
+		CD219F83212110FB00B9679D /* VSupplier_FatherCategory_Eat_Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F71212110FA00B9679D /* VSupplier_FatherCategory_Eat_Extend.m */; };
+		CD219F84212110FB00B9679D /* VSupplier_FatherCategory_house_Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F73212110FA00B9679D /* VSupplier_FatherCategory_house_Extend.m */; };
+		CD219F85212110FB00B9679D /* VUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F75212110FA00B9679D /* VUser.m */; };
+		CD219F86212110FB00B9679D /* VOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F77212110FA00B9679D /* VOrder.m */; };
+		CD219F87212110FB00B9679D /* VModel_status.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F79212110FA00B9679D /* VModel_status.m */; };
 		CD3FAD6A211D7E2F00933BF6 /* mycitys.json in Resources */ = {isa = PBXBuildFile; fileRef = CD3FAD69211D7E2F00933BF6 /* mycitys.json */; };
 		CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD6C211D877200933BF6 /* LSFun_Http.m */; };
 		CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD71211D8E9200933BF6 /* MJRefreshAutoFooter.m */; };
@@ -113,6 +130,41 @@
 		CD219F4A211E8A0C00B9679D /* readme.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
 		CD219F4F211EF18500B9679D /* LSFUNUIRowButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNUIRowButtons.h; sourceTree = "<group>"; };
 		CD219F50211EF18500B9679D /* LSFUNUIRowButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFUNUIRowButtons.m; sourceTree = "<group>"; };
+		CD219F552120D29E00B9679D /* LSTESTDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTESTDataView.h; sourceTree = "<group>"; };
+		CD219F562120D29E00B9679D /* LSTESTDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTESTDataView.m; sourceTree = "<group>"; };
+		CD219F5821210B3300B9679D /* LSTableCellSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTableCellSupplier.h; sourceTree = "<group>"; };
+		CD219F5921210B3300B9679D /* LSTableCellSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTableCellSupplier.m; sourceTree = "<group>"; };
+		CD219F5B21210CCB00B9679D /* LSTESTDataVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTESTDataVC.h; sourceTree = "<group>"; };
+		CD219F5C21210CCB00B9679D /* LSTESTDataVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTESTDataVC.m; sourceTree = "<group>"; };
+		CD219F5E212110FA00B9679D /* VCategory_All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCategory_All.h; sourceTree = "<group>"; };
+		CD219F5F212110FA00B9679D /* VCategory_All.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCategory_All.m; sourceTree = "<group>"; };
+		CD219F60212110FA00B9679D /* VCategory_Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCategory_Father.h; sourceTree = "<group>"; };
+		CD219F61212110FA00B9679D /* VCategory_Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCategory_Father.m; sourceTree = "<group>"; };
+		CD219F62212110FA00B9679D /* VCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCity.h; sourceTree = "<group>"; };
+		CD219F63212110FA00B9679D /* VCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCity.m; sourceTree = "<group>"; };
+		CD219F64212110FA00B9679D /* VGoods_Base_All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGoods_Base_All.h; sourceTree = "<group>"; };
+		CD219F65212110FA00B9679D /* VGoods_Base_All.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGoods_Base_All.m; sourceTree = "<group>"; };
+		CD219F66212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGoods_FatherCategory_Eat_Extend.h; sourceTree = "<group>"; };
+		CD219F67212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGoods_FatherCategory_Eat_Extend.m; sourceTree = "<group>"; };
+		CD219F68212110FA00B9679D /* VGoods_FatherCategory_House_Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGoods_FatherCategory_House_Extend.h; sourceTree = "<group>"; };
+		CD219F69212110FA00B9679D /* VGoods_FatherCategory_House_Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGoods_FatherCategory_House_Extend.m; sourceTree = "<group>"; };
+		CD219F6A212110FA00B9679D /* VGoods_FatherCategory_life_Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGoods_FatherCategory_life_Extend.h; sourceTree = "<group>"; };
+		CD219F6B212110FA00B9679D /* VGoods_FatherCategory_life_Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGoods_FatherCategory_life_Extend.m; sourceTree = "<group>"; };
+		CD219F6C212110FA00B9679D /* VGoods_FatherCategory_Play_Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGoods_FatherCategory_Play_Extend.h; sourceTree = "<group>"; };
+		CD219F6D212110FA00B9679D /* VGoods_FatherCategory_Play_Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGoods_FatherCategory_Play_Extend.m; sourceTree = "<group>"; };
+		CD219F6E212110FA00B9679D /* VSupplier_ALLCategory_Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSupplier_ALLCategory_Base.h; sourceTree = "<group>"; };
+		CD219F6F212110FA00B9679D /* VSupplier_ALLCategory_Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSupplier_ALLCategory_Base.m; sourceTree = "<group>"; };
+		CD219F70212110FA00B9679D /* VSupplier_FatherCategory_Eat_Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSupplier_FatherCategory_Eat_Extend.h; sourceTree = "<group>"; };
+		CD219F71212110FA00B9679D /* VSupplier_FatherCategory_Eat_Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSupplier_FatherCategory_Eat_Extend.m; sourceTree = "<group>"; };
+		CD219F72212110FA00B9679D /* VSupplier_FatherCategory_house_Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSupplier_FatherCategory_house_Extend.h; sourceTree = "<group>"; };
+		CD219F73212110FA00B9679D /* VSupplier_FatherCategory_house_Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSupplier_FatherCategory_house_Extend.m; sourceTree = "<group>"; };
+		CD219F74212110FA00B9679D /* VUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VUser.h; sourceTree = "<group>"; };
+		CD219F75212110FA00B9679D /* VUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VUser.m; sourceTree = "<group>"; };
+		CD219F76212110FA00B9679D /* VOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOrder.h; sourceTree = "<group>"; };
+		CD219F77212110FA00B9679D /* VOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOrder.m; sourceTree = "<group>"; };
+		CD219F78212110FA00B9679D /* VModel_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VModel_status.h; sourceTree = "<group>"; };
+		CD219F79212110FA00B9679D /* VModel_status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VModel_status.m; sourceTree = "<group>"; };
+		CD219F882121114F00B9679D /* modelsHeads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modelsHeads.h; sourceTree = "<group>"; };
 		CD3FAD69211D7E2F00933BF6 /* mycitys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycitys.json; sourceTree = "<group>"; };
 		CD3FAD6B211D877200933BF6 /* LSFun_Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFun_Http.h; sourceTree = "<group>"; };
 		CD3FAD6C211D877200933BF6 /* LSFun_Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFun_Http.m; sourceTree = "<group>"; };
@@ -342,6 +394,33 @@
 				CD219F50211EF18500B9679D /* LSFUNUIRowButtons.m */,
 			);
 			name = RowBtns;
+			sourceTree = "<group>";
+		};
+		CD219F522120D23800B9679D /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F532120D24C00B9679D /* view */,
+				CD219F542120D26100B9679D /* control */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		CD219F532120D24C00B9679D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F552120D29E00B9679D /* LSTESTDataView.h */,
+				CD219F562120D29E00B9679D /* LSTESTDataView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		CD219F542120D26100B9679D /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F5B21210CCB00B9679D /* LSTESTDataVC.h */,
+				CD219F5C21210CCB00B9679D /* LSTESTDataVC.m */,
+			);
+			name = control;
 			sourceTree = "<group>";
 		};
 		CD30E951211E604700491989 /* date */ = {
@@ -770,6 +849,7 @@
 		CDC92864211D1AF10071D16E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F882121114F00B9679D /* modelsHeads.h */,
 				CDC92898211D45EC0071D16E /* localstruct */,
 				CDC92866211D1B920071D16E /* models */,
 			);
@@ -780,7 +860,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC9288B211D3B5E0071D16E /* Test */,
-				CDC9286A211D1C3E0071D16E /* ReusedPage */,
+				CDC9286A211D1C3E0071D16E /* ReusedView */,
 				CDC9285D211D19F40071D16E /* Start */,
 				CDC9285E211D1A130071D16E /* Main */,
 				CDC9285F211D1A200071D16E /* Message */,
@@ -793,6 +873,34 @@
 		CDC92866211D1B920071D16E /* models */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F5E212110FA00B9679D /* VCategory_All.h */,
+				CD219F5F212110FA00B9679D /* VCategory_All.m */,
+				CD219F60212110FA00B9679D /* VCategory_Father.h */,
+				CD219F61212110FA00B9679D /* VCategory_Father.m */,
+				CD219F62212110FA00B9679D /* VCity.h */,
+				CD219F63212110FA00B9679D /* VCity.m */,
+				CD219F64212110FA00B9679D /* VGoods_Base_All.h */,
+				CD219F65212110FA00B9679D /* VGoods_Base_All.m */,
+				CD219F66212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.h */,
+				CD219F67212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.m */,
+				CD219F68212110FA00B9679D /* VGoods_FatherCategory_House_Extend.h */,
+				CD219F69212110FA00B9679D /* VGoods_FatherCategory_House_Extend.m */,
+				CD219F6A212110FA00B9679D /* VGoods_FatherCategory_life_Extend.h */,
+				CD219F6B212110FA00B9679D /* VGoods_FatherCategory_life_Extend.m */,
+				CD219F6C212110FA00B9679D /* VGoods_FatherCategory_Play_Extend.h */,
+				CD219F6D212110FA00B9679D /* VGoods_FatherCategory_Play_Extend.m */,
+				CD219F6E212110FA00B9679D /* VSupplier_ALLCategory_Base.h */,
+				CD219F6F212110FA00B9679D /* VSupplier_ALLCategory_Base.m */,
+				CD219F70212110FA00B9679D /* VSupplier_FatherCategory_Eat_Extend.h */,
+				CD219F71212110FA00B9679D /* VSupplier_FatherCategory_Eat_Extend.m */,
+				CD219F72212110FA00B9679D /* VSupplier_FatherCategory_house_Extend.h */,
+				CD219F73212110FA00B9679D /* VSupplier_FatherCategory_house_Extend.m */,
+				CD219F74212110FA00B9679D /* VUser.h */,
+				CD219F75212110FA00B9679D /* VUser.m */,
+				CD219F76212110FA00B9679D /* VOrder.h */,
+				CD219F77212110FA00B9679D /* VOrder.m */,
+				CD219F78212110FA00B9679D /* VModel_status.h */,
+				CD219F79212110FA00B9679D /* VModel_status.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -825,11 +933,13 @@
 			name = APPHelper;
 			sourceTree = "<group>";
 		};
-		CDC9286A211D1C3E0071D16E /* ReusedPage */ = {
+		CDC9286A211D1C3E0071D16E /* ReusedView */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F5821210B3300B9679D /* LSTableCellSupplier.h */,
+				CD219F5921210B3300B9679D /* LSTableCellSupplier.m */,
 			);
-			name = ReusedPage;
+			name = ReusedView;
 			sourceTree = "<group>";
 		};
 		CDC9286B211D1C700071D16E /* MYUI */ = {
@@ -919,6 +1029,7 @@
 		CDC9288B211D3B5E0071D16E /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				CD219F522120D23800B9679D /* data */,
 				CD3FAE45211DC0BF00933BF6 /* myui */,
 				CDC9288C211D3B9A0071D16E /* gbl&ui */,
 			);
@@ -1042,20 +1153,30 @@
 				CD3FAE11211D8E9300933BF6 /* UIScrollView+MJExtension.m in Sources */,
 				CD219F39211E6EB300B9679D /* LSUIPopupDateVIew.m in Sources */,
 				CD3FAE23211D8E9300933BF6 /* MKAnnotationView+WebCache.m in Sources */,
+				CD219F7D212110FA00B9679D /* VGoods_Base_All.m in Sources */,
+				CD219F7A212110FA00B9679D /* VCategory_All.m in Sources */,
 				CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */,
+				CD219F85212110FB00B9679D /* VUser.m in Sources */,
 				CD219F43211E78D700B9679D /* LSUIPopupcvView.m in Sources */,
+				CD219F7C212110FA00B9679D /* VCity.m in Sources */,
 				CD3FAE0D211D8E9300933BF6 /* MJRefreshStateHeader.m in Sources */,
 				CD3FAE3A211D8E9300933BF6 /* UIImage+MultiFormat.m in Sources */,
 				CDC9296F211D51B10071D16E /* APPFrameWrok.m in Sources */,
+				CD219F5A21210B3300B9679D /* LSTableCellSupplier.m in Sources */,
 				CD3FAE29211D8E9300933BF6 /* SDImageCacheConfig.m in Sources */,
 				CD3FB7A9211DCFF400933BF6 /* LSFUNUIPopupCityVC.m in Sources */,
+				CD219F82212110FB00B9679D /* VSupplier_ALLCategory_Base.m in Sources */,
 				CD3FAE4A211DC10400933BF6 /* LSTESTMYUIView.m in Sources */,
 				CD3FAE1F211D8E9300933BF6 /* ViewController+MASAdditions.m in Sources */,
+				CD219F7B212110FA00B9679D /* VCategory_Father.m in Sources */,
 				CD3FAE2C211D8E9300933BF6 /* SDWebImageCodersManager.m in Sources */,
 				CD3FAE12211D8E9300933BF6 /* UIScrollView+MJRefresh.m in Sources */,
 				CD3FAE1A211D8E9300933BF6 /* MASViewAttribute.m in Sources */,
+				CD219F80212110FA00B9679D /* VGoods_FatherCategory_life_Extend.m in Sources */,
 				CD3FAE17211D8E9300933BF6 /* MASConstraint.m in Sources */,
+				CD219F572120D29E00B9679D /* LSTESTDataView.m in Sources */,
 				CDC92835211D18740071D16E /* AppDelegate.m in Sources */,
+				CD219F87212110FB00B9679D /* VModel_status.m in Sources */,
 				CD3FAE24211D8E9300933BF6 /* NSButton+WebCache.m in Sources */,
 				CD3FAE1B211D8E9300933BF6 /* MASViewConstraint.m in Sources */,
 				CD3FAE2E211D8E9300933BF6 /* SDWebImageDownloader.m in Sources */,
@@ -1063,8 +1184,11 @@
 				CDC9287C211D37FB0071D16E /* LSBaseVC.m in Sources */,
 				CDC92879211D28F30071D16E /* LSModel_LocalStruct.m in Sources */,
 				CD3FB79E211DCE7300933BF6 /* LSUIPopupView.m in Sources */,
+				CD219F5D21210CCB00B9679D /* LSTESTDataVC.m in Sources */,
 				CD3FAE30211D8E9300933BF6 /* SDWebImageFrame.m in Sources */,
+				CD219F7F212110FA00B9679D /* VGoods_FatherCategory_House_Extend.m in Sources */,
 				CD3FAE2F211D8E9300933BF6 /* SDWebImageDownloaderOperation.m in Sources */,
+				CD219F84212110FB00B9679D /* VSupplier_FatherCategory_house_Extend.m in Sources */,
 				CD3FAE32211D8E9300933BF6 /* SDWebImageImageIOCoder.m in Sources */,
 				CD3FAE09211D8E9300933BF6 /* MJRefreshBackNormalFooter.m in Sources */,
 				CD3FAE25211D8E9300933BF6 /* NSData+ImageContentType.m in Sources */,
@@ -1073,8 +1197,10 @@
 				CD3FAE27211D8E9300933BF6 /* SDAnimatedImageRep.m in Sources */,
 				CD3FAE06211D8E9300933BF6 /* MJRefreshAutoNormalFooter.m in Sources */,
 				CD3FAE16211D8E9300933BF6 /* MASCompositeConstraint.m in Sources */,
+				CD219F86212110FB00B9679D /* VOrder.m in Sources */,
 				CD3FAE01211D8E9200933BF6 /* MJRefreshBackFooter.m in Sources */,
 				CD3FAE3D211D8E9300933BF6 /* UIImageView+WebCache.m in Sources */,
+				CD219F7E212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.m in Sources */,
 				CD3FAE07211D8E9300933BF6 /* MJRefreshAutoStateFooter.m in Sources */,
 				CD3FAE19211D8E9300933BF6 /* MASLayoutConstraint.m in Sources */,
 				CD3FAE1C211D8E9300933BF6 /* NSArray+MASAdditions.m in Sources */,
@@ -1117,7 +1243,9 @@
 				CD3FAE0A211D8E9300933BF6 /* MJRefreshBackStateFooter.m in Sources */,
 				CD3FAE0F211D8E9300933BF6 /* MJRefreshConst.m in Sources */,
 				CD3FAE34211D8E9300933BF6 /* SDWebImagePrefetcher.m in Sources */,
+				CD219F81212110FA00B9679D /* VGoods_FatherCategory_Play_Extend.m in Sources */,
 				CD219F51211EF18500B9679D /* LSFUNUIRowButtons.m in Sources */,
+				CD219F83212110FB00B9679D /* VSupplier_FatherCategory_Eat_Extend.m in Sources */,
 				CD3FAE4D211DC11800933BF6 /* LSTESTMYUIVC.m in Sources */,
 				CD3FAE44211D96CA00933BF6 /* LSFUNUICategory.m in Sources */,
 			);

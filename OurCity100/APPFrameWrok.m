@@ -13,6 +13,7 @@
 //pages
 #import "LSTestGblUiVC.h"
 #import "LSTESTMYUIVC.h"
+#import "LSTESTDataVC.h"
 
 //全局变量
 int paddingtop=0;
@@ -161,7 +162,7 @@ NSMutableArray<NSMutableArray<struct_city*>*> *gbl_citys;
     NavigationControllerInfo *my=[NavigationControllerInfo new];
     my.itemPic=[[UIImage imageNamed:@"order"]imageWithRenderingMode:UIImageRenderingModeAutomatic];
     my.itemName=@"data";
-    my.itemVC=[UIViewController new];//[LSIndexPage new];
+    my.itemVC=[LSTESTDataVC new];//[LSIndexPage new];
     [items addObject:my];
     
     NavigationControllerInfo *setting=[NavigationControllerInfo new];

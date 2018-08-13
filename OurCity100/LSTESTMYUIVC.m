@@ -38,9 +38,8 @@
 
 -(void)SetupRBtns
 {
-    self.myview.btns_test.datasorceHandler=self;
     self.filterdata=[LSBLLLocalData InitBardataHouse];
-    [self.myview.btns_test LoadDate];
+    self.myview.btns_test.datasorceHandler=self;
 }
 
 -(NSInteger)NumberOfBtns:(LSFUNUIRowButtons *)LSEB

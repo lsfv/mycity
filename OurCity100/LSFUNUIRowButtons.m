@@ -34,6 +34,12 @@
     return self;
 }
 
+-(void)setDatasorceHandler:(id<IRowBtnsData>)datasorceHandler
+{
+    _datasorceHandler  =datasorceHandler;
+    [self LoadDate];
+}
+
 -(void)LoadDate
 {
     if(_datasorceHandler!=nil)
