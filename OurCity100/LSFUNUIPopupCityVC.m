@@ -16,7 +16,7 @@
 @implementation LSFUNUIPopupCityVC
 
 
--(id)initWithP:(NSString*)cityCode provinces:(NSMutableArray<struct_city*>*) provinces citys:(NSMutableArray<NSMutableArray<struct_city*>*> *)citys handle:(UIViewController<IPOPCITY>*)handle
+-(id)initWithP_cityCode:(NSString*)cityCode provinces:(NSMutableArray<struct_city*>*) provinces citys:(NSMutableArray<NSMutableArray<struct_city*>*> *)citys handle:(UIViewController<IPOPCITY>*)handle
 {
     if(self=[super init])
     {

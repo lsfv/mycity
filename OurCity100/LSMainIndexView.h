@@ -13,4 +13,7 @@
 @property(nonatomic)UIView *view_pics;
 @property(nonatomic)UIView *view_categories;
 @property(nonatomic)UITableView *view_suppliers;
+
+@property(nonatomic)UIButton *btn_city;
+@property(nonatomic)UISearchBar *sb_search;
 @end

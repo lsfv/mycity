@@ -22,7 +22,7 @@
 @end
 
 @interface LSFUNUIPopupCityVC : UIViewController<UIPickerViewDelegate,UIPickerViewDataSource>
--(id)initWithP:(NSString*)cityCode provinces:(NSMutableArray<struct_city*>*) provinces citys:(NSMutableArray<NSMutableArray<struct_city*>*> *)citys handle:(UIViewController<IPOPCITY>*)handle;
+-(id)initWithP_cityCode:(NSString*)cityCode provinces:(NSMutableArray<struct_city*>*) provinces citys:(NSMutableArray<NSMutableArray<struct_city*>*> *)citys handle:(UIViewController<IPOPCITY>*)handle;
 @property(nonatomic)LSUIPopupCity *myview;
 @property(nonatomic)NSString *citycode;
 @property(nonatomic)UIViewController<IPOPCITY> *myhandle;

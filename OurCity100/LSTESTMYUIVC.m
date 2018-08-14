@@ -85,7 +85,7 @@
 
 -(void)PopCity
 {
-    LSFUNUIPopupCityVC *vc=[[LSFUNUIPopupCityVC alloc]initWithP:self.mysetting.mycity provinces:gbl_provinces citys:gbl_citys handle:self];
+    LSFUNUIPopupCityVC *vc=[[LSFUNUIPopupCityVC alloc]initWithP_cityCode:self.mysetting.mycity provinces:gbl_provinces citys:gbl_citys handle:self];
     [self.navigationController presentViewController:vc animated:YES completion:nil];
 }
 

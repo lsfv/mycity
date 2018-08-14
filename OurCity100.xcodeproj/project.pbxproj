@@ -34,6 +34,7 @@
 		CD219F8B2121211900B9679D /* LSBLLSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F8A2121211900B9679D /* LSBLLSupplier.m */; };
 		CD219F9221214C4F00B9679D /* LSBLLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F9121214C4F00B9679D /* LSBLLCommon.m */; };
 		CD219FF4212179C300B9679D /* LSMainIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219FF3212179C300B9679D /* LSMainIndexView.m */; };
+		CD219FF8212272F700B9679D /* LSMainIndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219FF7212272F700B9679D /* LSMainIndexVC.m */; };
 		CD3FAD6A211D7E2F00933BF6 /* mycitys.json in Resources */ = {isa = PBXBuildFile; fileRef = CD3FAD69211D7E2F00933BF6 /* mycitys.json */; };
 		CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD6C211D877200933BF6 /* LSFun_Http.m */; };
 		CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD71211D8E9200933BF6 /* MJRefreshAutoFooter.m */; };
@@ -174,6 +175,8 @@
 		CD219F9121214C4F00B9679D /* LSBLLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBLLCommon.m; sourceTree = "<group>"; };
 		CD219FF2212179C300B9679D /* LSMainIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainIndexView.h; sourceTree = "<group>"; };
 		CD219FF3212179C300B9679D /* LSMainIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainIndexView.m; sourceTree = "<group>"; };
+		CD219FF6212272F700B9679D /* LSMainIndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainIndexVC.h; sourceTree = "<group>"; };
+		CD219FF7212272F700B9679D /* LSMainIndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainIndexVC.m; sourceTree = "<group>"; };
 		CD3FAD69211D7E2F00933BF6 /* mycitys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycitys.json; sourceTree = "<group>"; };
 		CD3FAD6B211D877200933BF6 /* LSFun_Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFun_Http.h; sourceTree = "<group>"; };
 		CD3FAD6C211D877200933BF6 /* LSFun_Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFun_Http.m; sourceTree = "<group>"; };
@@ -445,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				CD219FF12121799200B9679D /* view */,
+				CD219FF52122723000B9679D /* control */,
 			);
 			name = Index;
 			sourceTree = "<group>";
@@ -456,6 +460,15 @@
 				CD219FF3212179C300B9679D /* LSMainIndexView.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		CD219FF52122723000B9679D /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CD219FF6212272F700B9679D /* LSMainIndexVC.h */,
+				CD219FF7212272F700B9679D /* LSMainIndexVC.m */,
+			);
+			name = control;
 			sourceTree = "<group>";
 		};
 		CD30E951211E604700491989 /* date */ = {
@@ -1232,6 +1245,7 @@
 				CD3FAE15211D8E9300933BF6 /* YYClassInfo.m in Sources */,
 				CD3FAE13211D8E9300933BF6 /* UIView+MJExtension.m in Sources */,
 				CD3FAE36211D8E9300933BF6 /* SDWebImageWebPCoder.m in Sources */,
+				CD219FF8212272F700B9679D /* LSMainIndexVC.m in Sources */,
 				CD3FAE37211D8E9300933BF6 /* UIButton+WebCache.m in Sources */,
 				CD3FAE38211D8E9300933BF6 /* UIImage+ForceDecode.m in Sources */,
 				CD3FAE2D211D8E9300933BF6 /* SDWebImageCompat.m in Sources */,

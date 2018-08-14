@@ -168,7 +168,7 @@
     UIView *myView=[UIView new];
     if(bgcolor==nil)
     {
-        myView.backgroundColor =[UIColor blackColor];
+        myView.backgroundColor =[UIColor redColor];
     }
     else
     {
