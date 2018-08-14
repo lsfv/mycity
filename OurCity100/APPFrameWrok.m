@@ -15,6 +15,8 @@
 #import "LSTESTMYUIVC.h"
 #import "LSTESTDataVC.h"
 
+#import "LSMainIndexVC.h"
+
 //全局变量
 int paddingtop=0;
 int paddingleft=0;
@@ -48,7 +50,7 @@ NSString *gbl_urlcitys=@"http://120.79.79.80:8044/MainPage.asmx/Citys_AllCitys";
 -(void)SetupApp:(UIWindow *)appWindow
 {
     //布局程序框架:tabbar+navinationcontrol
-    self.isTest=true;
+    self.isTest=false;
     UITabBarController *mytabController=[UITabBarController new];//tabcontrol
     NSMutableArray<UINavigationController*> *mynavigation=[self InitNavigationControls];
     mytabController.viewControllers=mynavigation;
@@ -62,17 +64,23 @@ NSString *gbl_urlcitys=@"http://120.79.79.80:8044/MainPage.asmx/Citys_AllCitys";
 -(void)InitParemeters:(UIWindow *)appWindow
 {
     //me
-    struct_me *meinfo=[struct_me new];
-    meinfo.u_id=1;
-    meinfo.u_loginname=@"linson";
     LSBLLLocalData *bll_localdata=[LSBLLLocalData new];
-    [bll_localdata UpdateMe:meinfo];
+    if([bll_localdata GetMe]==nil)
+    {
+        struct_me *meinfo=[struct_me new];
+        meinfo.u_id=1;
+        meinfo.u_loginname=@"linson";
+        [bll_localdata UpdateMe:meinfo];
+    }
     
     //mysetting
-    struct_mysetting *defaultSetting=[struct_mysetting new];
-    defaultSetting.mycity=@"360300";
-    defaultSetting.mysquares=@"360301,360302";
-    [bll_localdata UpdateMySetting:defaultSetting];
+    if([bll_localdata GetMySetting]==nil)
+    {
+        struct_mysetting *defaultSetting=[struct_mysetting new];
+        defaultSetting.mycity=@"360300";
+        defaultSetting.mysquares=@"360301,360302";
+        [bll_localdata UpdateMySetting:defaultSetting];
+    }
     
     //gbl variable
     CGRect statusRect = [[UIApplication sharedApplication] statusBarFrame];
@@ -133,7 +141,7 @@ NSString *gbl_urlcitys=@"http://120.79.79.80:8044/MainPage.asmx/Citys_AllCitys";
     NavigationControllerInfo *mainpage=[NavigationControllerInfo new];
     mainpage.itemPic=[[UIImage imageNamed:@"home"]imageWithRenderingMode:UIImageRenderingModeAutomatic];
     mainpage.itemName=@"首页";
-    mainpage.itemVC=[UIViewController new];//[LSIndexPage new];
+    mainpage.itemVC=[LSMainIndexVC new];//[LSIndexPage new];
     [items addObject:mainpage];
     
     NavigationControllerInfo *message=[NavigationControllerInfo new];
