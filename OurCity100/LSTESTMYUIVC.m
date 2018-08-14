@@ -11,6 +11,7 @@
 #import "LSFUNUIPopupDateVC.h"
 #import "LSGBLVariable.h"
 #import "LSFUNPopupcvVC.h"
+#import "LSBLLSupplier.h"
 
 @interface LSTESTMYUIVC ()
 @property(nonatomic)NSDate *myfrom;
@@ -38,7 +39,7 @@
 
 -(void)SetupRBtns
 {
-    self.filterdata=[LSBLLLocalData InitBardataHouse];
+    self.filterdata=[LSBLLSupplier InitHouseTypeData];
     self.myview.btns_test.datasorceHandler=self;
 }
 

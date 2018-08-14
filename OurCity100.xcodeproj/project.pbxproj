@@ -31,6 +31,9 @@
 		CD219F85212110FB00B9679D /* VUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F75212110FA00B9679D /* VUser.m */; };
 		CD219F86212110FB00B9679D /* VOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F77212110FA00B9679D /* VOrder.m */; };
 		CD219F87212110FB00B9679D /* VModel_status.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F79212110FA00B9679D /* VModel_status.m */; };
+		CD219F8B2121211900B9679D /* LSBLLSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F8A2121211900B9679D /* LSBLLSupplier.m */; };
+		CD219F9221214C4F00B9679D /* LSBLLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F9121214C4F00B9679D /* LSBLLCommon.m */; };
+		CD219FF4212179C300B9679D /* LSMainIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219FF3212179C300B9679D /* LSMainIndexView.m */; };
 		CD3FAD6A211D7E2F00933BF6 /* mycitys.json in Resources */ = {isa = PBXBuildFile; fileRef = CD3FAD69211D7E2F00933BF6 /* mycitys.json */; };
 		CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD6C211D877200933BF6 /* LSFun_Http.m */; };
 		CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD71211D8E9200933BF6 /* MJRefreshAutoFooter.m */; };
@@ -165,6 +168,12 @@
 		CD219F78212110FA00B9679D /* VModel_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VModel_status.h; sourceTree = "<group>"; };
 		CD219F79212110FA00B9679D /* VModel_status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VModel_status.m; sourceTree = "<group>"; };
 		CD219F882121114F00B9679D /* modelsHeads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modelsHeads.h; sourceTree = "<group>"; };
+		CD219F892121211900B9679D /* LSBLLSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBLLSupplier.h; sourceTree = "<group>"; };
+		CD219F8A2121211900B9679D /* LSBLLSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBLLSupplier.m; sourceTree = "<group>"; };
+		CD219F9021214C4F00B9679D /* LSBLLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBLLCommon.h; sourceTree = "<group>"; };
+		CD219F9121214C4F00B9679D /* LSBLLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBLLCommon.m; sourceTree = "<group>"; };
+		CD219FF2212179C300B9679D /* LSMainIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainIndexView.h; sourceTree = "<group>"; };
+		CD219FF3212179C300B9679D /* LSMainIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainIndexView.m; sourceTree = "<group>"; };
 		CD3FAD69211D7E2F00933BF6 /* mycitys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycitys.json; sourceTree = "<group>"; };
 		CD3FAD6B211D877200933BF6 /* LSFun_Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFun_Http.h; sourceTree = "<group>"; };
 		CD3FAD6C211D877200933BF6 /* LSFun_Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFun_Http.m; sourceTree = "<group>"; };
@@ -421,6 +430,32 @@
 				CD219F5C21210CCB00B9679D /* LSTESTDataVC.m */,
 			);
 			name = control;
+			sourceTree = "<group>";
+		};
+		CD219F8F21213F1600B9679D /* spcell */ = {
+			isa = PBXGroup;
+			children = (
+				CD219F5821210B3300B9679D /* LSTableCellSupplier.h */,
+				CD219F5921210B3300B9679D /* LSTableCellSupplier.m */,
+			);
+			name = spcell;
+			sourceTree = "<group>";
+		};
+		CD219FF02121798C00B9679D /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				CD219FF12121799200B9679D /* view */,
+			);
+			name = Index;
+			sourceTree = "<group>";
+		};
+		CD219FF12121799200B9679D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CD219FF2212179C300B9679D /* LSMainIndexView.h */,
+				CD219FF3212179C300B9679D /* LSMainIndexView.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		CD30E951211E604700491989 /* date */ = {
@@ -801,6 +836,7 @@
 		CDC9285E211D1A130071D16E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CD219FF02121798C00B9679D /* Index */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -860,7 +896,6 @@
 			isa = PBXGroup;
 			children = (
 				CDC9288B211D3B5E0071D16E /* Test */,
-				CDC9286A211D1C3E0071D16E /* ReusedView */,
 				CDC9285D211D19F40071D16E /* Start */,
 				CDC9285E211D1A130071D16E /* Main */,
 				CDC9285F211D1A200071D16E /* Message */,
@@ -905,13 +940,6 @@
 			name = models;
 			sourceTree = "<group>";
 		};
-		CDC92867211D1BA60071D16E /* modelManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = modelManager;
-			sourceTree = "<group>";
-		};
 		CDC92868211D1BF00071D16E /* Function */ = {
 			isa = PBXGroup;
 			children = (
@@ -926,6 +954,7 @@
 		CDC92869211D1C170071D16E /* APPHelper */ = {
 			isa = PBXGroup;
 			children = (
+				CDC9286A211D1C3E0071D16E /* ReusedView */,
 				CDC9287A211D37FB0071D16E /* LSBaseVC.h */,
 				CDC9287B211D37FB0071D16E /* LSBaseVC.m */,
 				CD3FAE40211D909700933BF6 /* LSGBLVariable.h */,
@@ -936,8 +965,7 @@
 		CDC9286A211D1C3E0071D16E /* ReusedView */ = {
 			isa = PBXGroup;
 			children = (
-				CD219F5821210B3300B9679D /* LSTableCellSupplier.h */,
-				CD219F5921210B3300B9679D /* LSTableCellSupplier.m */,
+				CD219F8F21213F1600B9679D /* spcell */,
 			);
 			name = ReusedView;
 			sourceTree = "<group>";
@@ -975,19 +1003,14 @@
 		CDC9286E211D1D550071D16E /* BLL */ = {
 			isa = PBXGroup;
 			children = (
-				CDC9286F211D1D9A0071D16E /* LocalData */,
-				CDC92867211D1BA60071D16E /* modelManager */,
-			);
-			name = BLL;
-			sourceTree = "<group>";
-		};
-		CDC9286F211D1D9A0071D16E /* LocalData */ = {
-			isa = PBXGroup;
-			children = (
+				CD219F892121211900B9679D /* LSBLLSupplier.h */,
+				CD219F8A2121211900B9679D /* LSBLLSupplier.m */,
 				CDC92899211D480E0071D16E /* LSBLLLocalData.h */,
 				CDC9289A211D480E0071D16E /* LSBLLLocalData.m */,
+				CD219F9021214C4F00B9679D /* LSBLLCommon.h */,
+				CD219F9121214C4F00B9679D /* LSBLLCommon.m */,
 			);
-			name = LocalData;
+			name = BLL;
 			sourceTree = "<group>";
 		};
 		CDC92887211D3A0B0071D16E /* IO */ = {
@@ -1230,14 +1253,17 @@
 				CD3FAE02211D8E9200933BF6 /* MJRefreshComponent.m in Sources */,
 				CD3FAE20211D8E9300933BF6 /* XRCarouselView.m in Sources */,
 				CD3FAE14211D8E9300933BF6 /* NSObject+YYModel.m in Sources */,
+				CD219FF4212179C300B9679D /* LSMainIndexView.m in Sources */,
 				CDC92832211D18740071D16E /* main.m in Sources */,
 				CD3FAE04211D8E9200933BF6 /* MJRefreshHeader.m in Sources */,
 				CDC92894211D3C150071D16E /* LSTestGblUiVC.m in Sources */,
 				CDC9288F211D3BD10071D16E /* LSTestGblUiView.m in Sources */,
 				CD3FAE3B211D8E9300933BF6 /* UIImage+WebP.m in Sources */,
 				CD3FAE26211D8E9300933BF6 /* NSImage+WebCache.m in Sources */,
+				CD219F8B2121211900B9679D /* LSBLLSupplier.m in Sources */,
 				CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */,
 				CD3FAE03211D8E9200933BF6 /* MJRefreshFooter.m in Sources */,
+				CD219F9221214C4F00B9679D /* LSBLLCommon.m in Sources */,
 				CD3FAE33211D8E9300933BF6 /* SDWebImageManager.m in Sources */,
 				CD3FAE35211D8E9300933BF6 /* SDWebImageTransition.m in Sources */,
 				CD3FAE0A211D8E9300933BF6 /* MJRefreshBackStateFooter.m in Sources */,

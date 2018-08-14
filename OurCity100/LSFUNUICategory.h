@@ -25,6 +25,7 @@
 
 @interface UIView(LSCATEGORY)
 +(UIView*)LSRoundView:(UIColor*)borderColer;
++(UIView*)LSBGVIEW:(UIColor*)bgcolor;
 @end
 
 @interface UIColor(LSCATEGORY)

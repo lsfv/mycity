@@ -22,4 +22,6 @@
 
 #import "VCity.h"
 
+#import "LSModel_LocalStruct.h"
+
 #endif /* modelsHeads_h */

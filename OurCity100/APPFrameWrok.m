@@ -22,6 +22,20 @@ int paddingright=0;
 int paddingbottom=0;
 NSMutableArray<struct_city*>* gbl_provinces;
 NSMutableArray<NSMutableArray<struct_city*>*> *gbl_citys;
+NSString *gbl_domain=@"http://120.79.79.80:8044";
+NSString *gbl_urlindexcategory=@"http://120.79.79.80:8044/MainPage.asmx/Category_MainCategory";
+NSString *gbl_urlindexSupplier=@"http://120.79.79.80:8044/MainPage.asmx/Supplier_indexRecommend";
+NSString *gbl_urleat_category=@"http://120.79.79.80:8044/MainPage.asmx/Category_GetSubCategoryByFatherID";
+NSString *gbl_urleat_supplier=@"http://120.79.79.80:8044/MainPage.asmx/Supplier_Eat";
+NSString *gbl_urlGoods_eatsp=@"http://120.79.79.80:8044/MainPage.asmx/Goods_Eat";
+NSString *gbl_urlhouse_supplier=@"http://120.79.79.80:8044/MainPage.asmx/Supplier_House";
+NSString *gbl_urlhouse_supplierdate=@"http://120.79.79.80:8044/MainPage.asmx/Supplier_HouseByInOutDate";
+NSString *gbl_urlGoods_housesp=@"http://120.79.79.80:8044/MainPage.asmx/Goods_HouseByInOutDate";
+NSString *gbl_urlUser_order=@"http://120.79.79.80:8044/MainPage.asmx/User_GetOrders";
+NSString *gbl_urluser_regedit=@"http://120.79.79.80:8044/MainPage.asmx/User_RegeditUser";
+NSString *gbl_urluser_login=@"http://120.79.79.80:8044/MainPage.asmx/User_GetUserByID";
+NSString *gbl_urlcitys=@"http://120.79.79.80:8044/MainPage.asmx/Citys_AllCitys";
+
 
 
 

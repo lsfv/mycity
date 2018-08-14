@@ -162,6 +162,20 @@
     }
     return myView;
 }
+
++(UIView*)LSBGVIEW:(UIColor*)bgcolor
+{
+    UIView *myView=[UIView new];
+    if(bgcolor==nil)
+    {
+        myView.backgroundColor =[UIColor blackColor];
+    }
+    else
+    {
+        myView.backgroundColor=bgcolor;
+    }
+    return myView;
+}
 @end
 
 

@@ -154,28 +154,4 @@
     return ret;
 }
 
-
-+(NSArray<struct_btn*>*) InitBardataHouse
-{
-    struct_btn *btn2=[struct_btn new];
-    btn2.btntag=enum_spfilter;
-    btn2.btntext=@"筛选";
-    
-    struct_btn *btn3=[struct_btn new];
-    btn3.btntag=enum_square;
-    btn3.btntext=@"地区";
-    
-    struct_btn *btn4=[struct_btn new];
-    btn4.btntag=enum_distance;
-    btn4.btntext=@"附近";
-    
-    struct_btn *btn5=[struct_btn new];
-    btn5.btntag=enum_orderby;
-    btn5.btntext=@"排序";
-    
-    NSArray<struct_btn*>* ret=@[btn2,btn3,btn4,btn5];
-    
-    return ret;
-}
-
 @end

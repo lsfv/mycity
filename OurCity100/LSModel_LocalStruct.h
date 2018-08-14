@@ -13,6 +13,7 @@
 @property(nonatomic) NSInteger btntag;
 @property(nonatomic) NSString *btntext;
 @property(nonatomic,weak)UIButton *btnptr;
+@property(nonatomic) NSString *btnimg;
 @end
 
 @interface NavigationControllerInfo : NSObject
