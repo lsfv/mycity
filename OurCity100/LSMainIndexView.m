@@ -23,7 +23,7 @@
         _view_pics=[UIView new];
         [self addSubview:_view_pics];
         
-        _view_categories=[[LSFUNUIRowButtons alloc]initWithBtnParemater_left:0 paddingright:0 btnwidth:50 bgcolor:nil];
+        _view_categories=[[LSFUNUIRowButtons alloc]initWithBtnParemater_left:0 paddingright:0 btnwidth:70 bgcolor:nil];
         [self addSubview:_view_categories];
         
         _view_suppliers=[UITableView new];
@@ -34,6 +34,11 @@
         
         _sb_search=[UISearchBar new];
         [_view_searchbar addSubview:_sb_search];
+        
+        _pics_index=[XRCarouselView new];
+        [_view_pics addSubview:_pics_index];
+    
+        
     }
     return self;
 }
@@ -87,6 +92,11 @@
         make.top.offset(0);
         make.right.offset(0);
         make.bottom.offset(0);
+    }];
+    
+    
+    [_pics_index mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.and.left.and.right.and.bottom.offset(0);
     }];
     
     [super updateConstraints];

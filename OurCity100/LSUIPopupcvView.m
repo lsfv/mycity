@@ -8,12 +8,17 @@
 
 #import "LSUIPopupcvView.h"
 
+@interface LSUIPopupcvView()
+
+@end
+
 @implementation LSUIPopupcvView
 
--(id)init
+-(id)initWithP_MS:(BOOL)muls
 {
     if(self=[super init])
     {
+        _mulSelect=muls;
         self.view_main=[LSUIPopupView new];
         [self addSubview:_view_main];
         
@@ -36,7 +41,7 @@
         
         [layout setScrollDirection:UICollectionViewScrollDirectionVertical];
         self.cv_collection=[[UICollectionView alloc]initWithFrame:CGRectMake(1, 1, 1  , 1) collectionViewLayout:layout];
-        self.cv_collection.allowsMultipleSelection=true;
+        self.cv_collection.allowsMultipleSelection=_mulSelect;
         
         [self.view_main.view_contect addSubview:_cv_collection];
     }

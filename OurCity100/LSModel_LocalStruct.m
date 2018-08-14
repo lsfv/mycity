@@ -22,3 +22,12 @@
 
 @implementation struct_city
 @end
+
+
+@implementation struct_eatSearch
+
+@end
+
+@implementation struct_houseSearch
+
+@end

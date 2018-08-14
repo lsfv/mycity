@@ -22,7 +22,7 @@ extern NSMutableArray<NSMutableArray<struct_city*>*> *gbl_citys;
 extern NSString *gbl_domain;
 extern NSString *gbl_urlindexcategory;
 extern NSString *gbl_urlindexSupplier;
-extern NSString *gbl_urleat_category;
+extern NSString *gbl_urlsub_category;
 extern NSString *gbl_urleat_supplier;
 extern NSString *gbl_urlGoods_eatsp;
 extern NSString *gbl_urlhouse_supplier;
@@ -57,6 +57,14 @@ enum ET_houseType
     enum_1b2p,
     enum_2b2p,
     enum_2b4p
+};
+enum ET_eatType
+{
+    enum_1p=1,
+    enum_2p,
+    enum_35p,
+    enum_510p,
+    enum_more10
 };
 
 enum ET_orderStatus

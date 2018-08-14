@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface LSBLLCommon : NSObject
++(NSString*)GetFullPicPath:(NSString*)picpach;
 +(void)LoadHttpPicDefault:(NSString*)picpath control:(id)control;
 @end

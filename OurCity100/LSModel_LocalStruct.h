@@ -50,3 +50,21 @@
 @property (strong,nonatomic) NSString *name;
 @property (strong,nonatomic) NSString *parentID;
 @end
+
+@interface struct_eatSearch : NSObject
+@property(nonatomic) NSInteger subCategory;
+@property(nonatomic) NSMutableArray<NSIndexPath *> * eatPeople;
+@property(nonatomic) NSString * cityZone;
+@property(nonatomic) NSString * orderby;
+@property(nonatomic) NSInteger distance;
+@property(nonatomic) NSInteger newsp;
+@end
+
+@interface struct_houseSearch : NSObject
+@property(nonatomic) NSInteger housePeople;
+@property(nonatomic) NSString * cityZone;
+@property(nonatomic) NSString * orderby;
+@property(nonatomic) NSInteger distance;
+@property(nonatomic)NSDate *intime;
+@property(nonatomic)NSDate *outtime;
+@end

@@ -27,7 +27,7 @@ NSMutableArray<NSMutableArray<struct_city*>*> *gbl_citys;
 NSString *gbl_domain=@"http://120.79.79.80:8044";
 NSString *gbl_urlindexcategory=@"http://120.79.79.80:8044/MainPage.asmx/Category_MainCategory";
 NSString *gbl_urlindexSupplier=@"http://120.79.79.80:8044/MainPage.asmx/Supplier_indexRecommend";
-NSString *gbl_urleat_category=@"http://120.79.79.80:8044/MainPage.asmx/Category_GetSubCategoryByFatherID";
+NSString *gbl_urlsub_category=@"http://120.79.79.80:8044/MainPage.asmx/Category_GetSubCategoryByFatherID";
 NSString *gbl_urleat_supplier=@"http://120.79.79.80:8044/MainPage.asmx/Supplier_Eat";
 NSString *gbl_urlGoods_eatsp=@"http://120.79.79.80:8044/MainPage.asmx/Goods_Eat";
 NSString *gbl_urlhouse_supplier=@"http://120.79.79.80:8044/MainPage.asmx/Supplier_House";
@@ -50,7 +50,7 @@ NSString *gbl_urlcitys=@"http://120.79.79.80:8044/MainPage.asmx/Citys_AllCitys";
 -(void)SetupApp:(UIWindow *)appWindow
 {
     //布局程序框架:tabbar+navinationcontrol
-    self.isTest=false;
+    self.isTest=true;
     UITabBarController *mytabController=[UITabBarController new];//tabcontrol
     NSMutableArray<UINavigationController*> *mynavigation=[self InitNavigationControls];
     mytabController.viewControllers=mynavigation;

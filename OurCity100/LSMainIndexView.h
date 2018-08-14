@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XRCarouselView.h"
+#import "LSFUNUIRowButtons.h"
 
 @interface LSMainIndexView : UIView
-@property(nonatomic)UIView *view_searchbar;
-@property(nonatomic)UIView *view_pics;
-@property(nonatomic)UIView *view_categories;
-@property(nonatomic)UITableView *view_suppliers;
+@property(nonatomic)UIView * _Nullable view_searchbar;
+@property(nonatomic)UIView * _Nullable view_pics;
+@property(nonatomic)LSFUNUIRowButtons * _Nullable view_categories;
+@property(nonatomic)UITableView * _Nullable view_suppliers;
 
-@property(nonatomic)UIButton *btn_city;
-@property(nonatomic)UISearchBar *sb_search;
+@property(nonatomic)UIButton * _Nullable btn_city;
+@property(nonatomic)UISearchBar * _Nullable sb_search;
+
+@property(nonatomic)XRCarouselView * _Nullable pics_index;
+
 @end

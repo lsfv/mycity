@@ -10,7 +10,10 @@
 #import "LSMainIndexView.h"
 #import "LSBaseVC.h"
 #import "LSFUNUIPopupCityVC.h"
+#import "XRCarouselView.h"
+#import "LSFUNUIRowButtons.h"
+#import "LSTableCellSupplier.h"
 
-@interface LSMainIndexVC : LSBaseVC<IPOPCITY>
+@interface LSMainIndexVC : LSBaseVC<IPOPCITY,XRCarouselViewDelegate,IRowBtnsData,UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic)LSMainIndexView *myview;
 @end

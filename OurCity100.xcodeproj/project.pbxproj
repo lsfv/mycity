@@ -35,6 +35,11 @@
 		CD219F9221214C4F00B9679D /* LSBLLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219F9121214C4F00B9679D /* LSBLLCommon.m */; };
 		CD219FF4212179C300B9679D /* LSMainIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219FF3212179C300B9679D /* LSMainIndexView.m */; };
 		CD219FF8212272F700B9679D /* LSMainIndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219FF7212272F700B9679D /* LSMainIndexVC.m */; };
+		CD219FFB21228B7300B9679D /* LSBLLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219FFA21228B7300B9679D /* LSBLLCategory.m */; };
+		CD21A0022122AA1C00B9679D /* LSReuseSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CD21A0012122AA1C00B9679D /* LSReuseSearchBar.m */; };
+		CD21A0052122AC8700B9679D /* LSMainEatView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD21A0042122AC8700B9679D /* LSMainEatView.m */; };
+		CD21A0082122C7E100B9679D /* LSMainEatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD21A0072122C7E100B9679D /* LSMainEatVC.m */; };
+		CD21A00B2122CE2300B9679D /* LSBLLEat.m in Sources */ = {isa = PBXBuildFile; fileRef = CD21A00A2122CE2300B9679D /* LSBLLEat.m */; };
 		CD3FAD6A211D7E2F00933BF6 /* mycitys.json in Resources */ = {isa = PBXBuildFile; fileRef = CD3FAD69211D7E2F00933BF6 /* mycitys.json */; };
 		CD3FAD6D211D877200933BF6 /* LSFun_Http.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD6C211D877200933BF6 /* LSFun_Http.m */; };
 		CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3FAD71211D8E9200933BF6 /* MJRefreshAutoFooter.m */; };
@@ -177,6 +182,16 @@
 		CD219FF3212179C300B9679D /* LSMainIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainIndexView.m; sourceTree = "<group>"; };
 		CD219FF6212272F700B9679D /* LSMainIndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainIndexVC.h; sourceTree = "<group>"; };
 		CD219FF7212272F700B9679D /* LSMainIndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainIndexVC.m; sourceTree = "<group>"; };
+		CD219FF921228B7300B9679D /* LSBLLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBLLCategory.h; sourceTree = "<group>"; };
+		CD219FFA21228B7300B9679D /* LSBLLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBLLCategory.m; sourceTree = "<group>"; };
+		CD21A0002122AA1C00B9679D /* LSReuseSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSReuseSearchBar.h; sourceTree = "<group>"; };
+		CD21A0012122AA1C00B9679D /* LSReuseSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSReuseSearchBar.m; sourceTree = "<group>"; };
+		CD21A0032122AC8700B9679D /* LSMainEatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainEatView.h; sourceTree = "<group>"; };
+		CD21A0042122AC8700B9679D /* LSMainEatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainEatView.m; sourceTree = "<group>"; };
+		CD21A0062122C7E100B9679D /* LSMainEatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainEatVC.h; sourceTree = "<group>"; };
+		CD21A0072122C7E100B9679D /* LSMainEatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainEatVC.m; sourceTree = "<group>"; };
+		CD21A0092122CE2300B9679D /* LSBLLEat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBLLEat.h; sourceTree = "<group>"; };
+		CD21A00A2122CE2300B9679D /* LSBLLEat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBLLEat.m; sourceTree = "<group>"; };
 		CD3FAD69211D7E2F00933BF6 /* mycitys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mycitys.json; sourceTree = "<group>"; };
 		CD3FAD6B211D877200933BF6 /* LSFun_Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFun_Http.h; sourceTree = "<group>"; };
 		CD3FAD6C211D877200933BF6 /* LSFun_Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFun_Http.m; sourceTree = "<group>"; };
@@ -469,6 +484,42 @@
 				CD219FF7212272F700B9679D /* LSMainIndexVC.m */,
 			);
 			name = control;
+			sourceTree = "<group>";
+		};
+		CD219FFC2122A9BB00B9679D /* eat */ = {
+			isa = PBXGroup;
+			children = (
+				CD219FFD2122A9C100B9679D /* view */,
+				CD219FFE2122A9CA00B9679D /* control */,
+			);
+			name = eat;
+			sourceTree = "<group>";
+		};
+		CD219FFD2122A9C100B9679D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CD21A0032122AC8700B9679D /* LSMainEatView.h */,
+				CD21A0042122AC8700B9679D /* LSMainEatView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		CD219FFE2122A9CA00B9679D /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CD21A0062122C7E100B9679D /* LSMainEatVC.h */,
+				CD21A0072122C7E100B9679D /* LSMainEatVC.m */,
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		CD219FFF2122A9DB00B9679D /* searchbar */ = {
+			isa = PBXGroup;
+			children = (
+				CD21A0002122AA1C00B9679D /* LSReuseSearchBar.h */,
+				CD21A0012122AA1C00B9679D /* LSReuseSearchBar.m */,
+			);
+			name = searchbar;
 			sourceTree = "<group>";
 		};
 		CD30E951211E604700491989 /* date */ = {
@@ -850,6 +901,7 @@
 			isa = PBXGroup;
 			children = (
 				CD219FF02121798C00B9679D /* Index */,
+				CD219FFC2122A9BB00B9679D /* eat */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -978,6 +1030,7 @@
 		CDC9286A211D1C3E0071D16E /* ReusedView */ = {
 			isa = PBXGroup;
 			children = (
+				CD219FFF2122A9DB00B9679D /* searchbar */,
 				CD219F8F21213F1600B9679D /* spcell */,
 			);
 			name = ReusedView;
@@ -1022,6 +1075,10 @@
 				CDC9289A211D480E0071D16E /* LSBLLLocalData.m */,
 				CD219F9021214C4F00B9679D /* LSBLLCommon.h */,
 				CD219F9121214C4F00B9679D /* LSBLLCommon.m */,
+				CD219FF921228B7300B9679D /* LSBLLCategory.h */,
+				CD219FFA21228B7300B9679D /* LSBLLCategory.m */,
+				CD21A0092122CE2300B9679D /* LSBLLEat.h */,
+				CD21A00A2122CE2300B9679D /* LSBLLEat.m */,
 			);
 			name = BLL;
 			sourceTree = "<group>";
@@ -1198,6 +1255,8 @@
 				CD3FAE0D211D8E9300933BF6 /* MJRefreshStateHeader.m in Sources */,
 				CD3FAE3A211D8E9300933BF6 /* UIImage+MultiFormat.m in Sources */,
 				CDC9296F211D51B10071D16E /* APPFrameWrok.m in Sources */,
+				CD21A0052122AC8700B9679D /* LSMainEatView.m in Sources */,
+				CD21A00B2122CE2300B9679D /* LSBLLEat.m in Sources */,
 				CD219F5A21210B3300B9679D /* LSTableCellSupplier.m in Sources */,
 				CD3FAE29211D8E9300933BF6 /* SDImageCacheConfig.m in Sources */,
 				CD3FB7A9211DCFF400933BF6 /* LSFUNUIPopupCityVC.m in Sources */,
@@ -1226,6 +1285,7 @@
 				CD3FAE2F211D8E9300933BF6 /* SDWebImageDownloaderOperation.m in Sources */,
 				CD219F84212110FB00B9679D /* VSupplier_FatherCategory_house_Extend.m in Sources */,
 				CD3FAE32211D8E9300933BF6 /* SDWebImageImageIOCoder.m in Sources */,
+				CD21A0022122AA1C00B9679D /* LSReuseSearchBar.m in Sources */,
 				CD3FAE09211D8E9300933BF6 /* MJRefreshBackNormalFooter.m in Sources */,
 				CD3FAE25211D8E9300933BF6 /* NSData+ImageContentType.m in Sources */,
 				CDC92897211D43140071D16E /* LSFun_IO.m in Sources */,
@@ -1238,6 +1298,7 @@
 				CD3FAE3D211D8E9300933BF6 /* UIImageView+WebCache.m in Sources */,
 				CD219F7E212110FA00B9679D /* VGoods_FatherCategory_Eat_Extend.m in Sources */,
 				CD3FAE07211D8E9300933BF6 /* MJRefreshAutoStateFooter.m in Sources */,
+				CD219FFB21228B7300B9679D /* LSBLLCategory.m in Sources */,
 				CD3FAE19211D8E9300933BF6 /* MASLayoutConstraint.m in Sources */,
 				CD3FAE1C211D8E9300933BF6 /* NSArray+MASAdditions.m in Sources */,
 				CD3FAE0B211D8E9300933BF6 /* MJRefreshGifHeader.m in Sources */,
@@ -1288,6 +1349,7 @@
 				CD219F83212110FB00B9679D /* VSupplier_FatherCategory_Eat_Extend.m in Sources */,
 				CD3FAE4D211DC11800933BF6 /* LSTESTMYUIVC.m in Sources */,
 				CD3FAE44211D96CA00933BF6 /* LSFUNUICategory.m in Sources */,
+				CD21A0082122C7E100B9679D /* LSMainEatVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
