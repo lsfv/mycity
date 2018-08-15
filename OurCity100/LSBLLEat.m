@@ -16,6 +16,73 @@
     [LSFun_Http HttpPost:gbl_urleat_supplier body:body handle:handle];
 }
 
+
++(NSString*)GetEetPopeleCountPredict:(NSMutableArray<NSIndexPath *>*)eatSet
+{
+    NSString *strpredict=@"";
+    for(int i=0;i<eatSet.count;i++)
+    {
+        int tag=(int)eatSet[i].row;
+        if(tag==0)
+        {
+            if([strpredict isEqual:@""])
+            {
+                strpredict=@" has1>0 ";
+            }
+            else
+            {
+                strpredict=[strpredict stringByAppendingString:@" || has1>0 "];
+            }
+        }
+        if(tag==1)
+        {
+            if([strpredict isEqual:@""])
+            {
+                strpredict=@" has2>0 ";
+            }
+            else
+            {
+                strpredict=[strpredict stringByAppendingString:@" || has2>0 "];
+            }
+        }
+        if(tag==2)
+        {
+            if([strpredict isEqual:@""])
+            {
+                strpredict=@" has3>0 ";
+            }
+            else
+            {
+                strpredict=[strpredict stringByAppendingString:@" || has3>0 "];
+            }
+        }
+        if(tag==3)
+        {
+            if([strpredict isEqual:@""])
+            {
+                strpredict=@" has4>0 ";
+            }
+            else
+            {
+                strpredict=[strpredict stringByAppendingString:@" || has4>0 "];
+            }
+        }
+        if(tag==4)
+        {
+            if([strpredict isEqual:@""])
+            {
+                strpredict=@" hasall>0 ";
+            }
+            else
+            {
+                strpredict=[strpredict stringByAppendingString:@" || hasall>0 "];
+            }
+        }
+    }
+    
+    return strpredict;
+}
+
 +(NSArray<struct_btn*>*) InitBardata
 {
     struct_btn *btn1=[struct_btn new];
@@ -48,6 +115,7 @@
     NSArray<NSString*>* ret=@[@"单人餐",@"双人餐",@"3~5",@"5~10",@"10人以上"];
     return ret;
 }
+
 
 
 +(NSArray<NSString*>*) InitEatCategory:(NSMutableArray<LSModel_VCategory_All*>*)array_eatcategory
@@ -83,5 +151,11 @@
     return ret;
 }
 
+
++(void)GetGoodsFormEatSPID:(NSInteger)spid handle:(ReceiveHandle)handle
+{
+    NSString *body=[NSString stringWithFormat:@"spid=%i",(int)spid];
+    [LSFun_Http HttpPost:gbl_urlGoods_eatsp body:body handle:handle];
+}
 
 @end

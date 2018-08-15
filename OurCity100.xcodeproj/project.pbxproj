@@ -123,6 +123,10 @@
 		CDC92897211D43140071D16E /* LSFun_IO.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC92896211D43140071D16E /* LSFun_IO.m */; };
 		CDC9289B211D480E0071D16E /* LSBLLLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9289A211D480E0071D16E /* LSBLLLocalData.m */; };
 		CDC9296F211D51B10071D16E /* APPFrameWrok.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9296E211D51B10071D16E /* APPFrameWrok.m */; };
+		CDD0D4AB2123DED200F1E9A5 /* LSMainSupplierView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4AA2123DED200F1E9A5 /* LSMainSupplierView.m */; };
+		CDD0D4AE2123DEEA00F1E9A5 /* LSMainSupplierVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4AD2123DEEA00F1E9A5 /* LSMainSupplierVC.m */; };
+		CDD0D4B22123DF4700F1E9A5 /* LSReuseSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4B12123DF4700F1E9A5 /* LSReuseSupplier.m */; };
+		CDD0D4B62124367F00F1E9A5 /* LSTabelCellGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4B52124367F00F1E9A5 /* LSTabelCellGoods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -364,6 +368,14 @@
 		CDC92899211D480E0071D16E /* LSBLLLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBLLLocalData.h; sourceTree = "<group>"; };
 		CDC9289A211D480E0071D16E /* LSBLLLocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBLLLocalData.m; sourceTree = "<group>"; };
 		CDC9296E211D51B10071D16E /* APPFrameWrok.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPFrameWrok.m; sourceTree = "<group>"; };
+		CDD0D4A92123DED200F1E9A5 /* LSMainSupplierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainSupplierView.h; sourceTree = "<group>"; };
+		CDD0D4AA2123DED200F1E9A5 /* LSMainSupplierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainSupplierView.m; sourceTree = "<group>"; };
+		CDD0D4AC2123DEEA00F1E9A5 /* LSMainSupplierVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainSupplierVC.h; sourceTree = "<group>"; };
+		CDD0D4AD2123DEEA00F1E9A5 /* LSMainSupplierVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainSupplierVC.m; sourceTree = "<group>"; };
+		CDD0D4B02123DF4700F1E9A5 /* LSReuseSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSReuseSupplier.h; sourceTree = "<group>"; };
+		CDD0D4B12123DF4700F1E9A5 /* LSReuseSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSReuseSupplier.m; sourceTree = "<group>"; };
+		CDD0D4B42124367F00F1E9A5 /* LSTabelCellGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabelCellGoods.h; sourceTree = "<group>"; };
+		CDD0D4B52124367F00F1E9A5 /* LSTabelCellGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabelCellGoods.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -900,6 +912,7 @@
 		CDC9285E211D1A130071D16E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CDD0D4A62123D48100F1E9A5 /* supplier */,
 				CD219FF02121798C00B9679D /* Index */,
 				CD219FFC2122A9BB00B9679D /* eat */,
 			);
@@ -1030,6 +1043,8 @@
 		CDC9286A211D1C3E0071D16E /* ReusedView */ = {
 			isa = PBXGroup;
 			children = (
+				CDD0D4B32124367100F1E9A5 /* goodscell */,
+				CDD0D4AF2123DF2300F1E9A5 /* spview */,
 				CD219FFF2122A9DB00B9679D /* searchbar */,
 				CD219F8F21213F1600B9679D /* spcell */,
 			);
@@ -1165,6 +1180,51 @@
 			name = localstruct;
 			sourceTree = "<group>";
 		};
+		CDD0D4A62123D48100F1E9A5 /* supplier */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4A82123D49700F1E9A5 /* view */,
+				CDD0D4A72123D49000F1E9A5 /* control */,
+			);
+			name = supplier;
+			sourceTree = "<group>";
+		};
+		CDD0D4A72123D49000F1E9A5 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4AC2123DEEA00F1E9A5 /* LSMainSupplierVC.h */,
+				CDD0D4AD2123DEEA00F1E9A5 /* LSMainSupplierVC.m */,
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		CDD0D4A82123D49700F1E9A5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4A92123DED200F1E9A5 /* LSMainSupplierView.h */,
+				CDD0D4AA2123DED200F1E9A5 /* LSMainSupplierView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		CDD0D4AF2123DF2300F1E9A5 /* spview */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4B02123DF4700F1E9A5 /* LSReuseSupplier.h */,
+				CDD0D4B12123DF4700F1E9A5 /* LSReuseSupplier.m */,
+			);
+			name = spview;
+			sourceTree = "<group>";
+		};
+		CDD0D4B32124367100F1E9A5 /* goodscell */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4B42124367F00F1E9A5 /* LSTabelCellGoods.h */,
+				CDD0D4B52124367F00F1E9A5 /* LSTabelCellGoods.m */,
+			);
+			name = goodscell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1254,6 +1314,7 @@
 				CD219F7C212110FA00B9679D /* VCity.m in Sources */,
 				CD3FAE0D211D8E9300933BF6 /* MJRefreshStateHeader.m in Sources */,
 				CD3FAE3A211D8E9300933BF6 /* UIImage+MultiFormat.m in Sources */,
+				CDD0D4AE2123DEEA00F1E9A5 /* LSMainSupplierVC.m in Sources */,
 				CDC9296F211D51B10071D16E /* APPFrameWrok.m in Sources */,
 				CD21A0052122AC8700B9679D /* LSMainEatView.m in Sources */,
 				CD21A00B2122CE2300B9679D /* LSBLLEat.m in Sources */,
@@ -1277,6 +1338,7 @@
 				CD3FAE2E211D8E9300933BF6 /* SDWebImageDownloader.m in Sources */,
 				CD3FAE18211D8E9300933BF6 /* MASConstraintMaker.m in Sources */,
 				CDC9287C211D37FB0071D16E /* LSBaseVC.m in Sources */,
+				CDD0D4AB2123DED200F1E9A5 /* LSMainSupplierView.m in Sources */,
 				CDC92879211D28F30071D16E /* LSModel_LocalStruct.m in Sources */,
 				CD3FB79E211DCE7300933BF6 /* LSUIPopupView.m in Sources */,
 				CD219F5D21210CCB00B9679D /* LSTESTDataVC.m in Sources */,
@@ -1308,8 +1370,10 @@
 				CD3FAE36211D8E9300933BF6 /* SDWebImageWebPCoder.m in Sources */,
 				CD219FF8212272F700B9679D /* LSMainIndexVC.m in Sources */,
 				CD3FAE37211D8E9300933BF6 /* UIButton+WebCache.m in Sources */,
+				CDD0D4B62124367F00F1E9A5 /* LSTabelCellGoods.m in Sources */,
 				CD3FAE38211D8E9300933BF6 /* UIImage+ForceDecode.m in Sources */,
 				CD3FAE2D211D8E9300933BF6 /* SDWebImageCompat.m in Sources */,
+				CDD0D4B22123DF4700F1E9A5 /* LSReuseSupplier.m in Sources */,
 				CD3FAE05211D8E9200933BF6 /* MJRefreshAutoGifFooter.m in Sources */,
 				CD3FAE22211D8E9300933BF6 /* FLAnimatedImageView+WebCache.m in Sources */,
 				CDC9289B211D480E0071D16E /* LSBLLLocalData.m in Sources */,

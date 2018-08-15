@@ -19,4 +19,6 @@
 +(NSArray<NSString*>*) InitEatTypeDate;
 +(NSArray<NSString*>*) InitEatCategory:(NSMutableArray<LSModel_VCategory_All*>*)array_eatcategory;
 +(NSMutableArray<NSIndexPath*>*) GetindePath4Select:(NSMutableArray<LSModel_VCategory_All*>*)array_eatcategory selectindex:(NSInteger)selectindex;
++(NSString*)GetEetPopeleCountPredict:(NSMutableArray<NSIndexPath *>*)eatSet;
++(void)GetGoodsFormEatSPID:(NSInteger)spid handle:(ReceiveHandle)handle;
 @end

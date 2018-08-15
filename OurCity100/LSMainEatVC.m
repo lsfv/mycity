@@ -11,6 +11,7 @@
 #import "LSBLLCategory.h"
 #import "LSFUNPopupcvVC.h"
 #import "LSTableCellSupplier.h"
+#import "LSMainSupplierVC.h"
 
 
 @interface LSMainEatVC ()
@@ -65,12 +66,13 @@
             NSPredicate *predicte1=[NSPredicate predicateWithFormat:strpredict];
             [_array_filter_eatSupplier filterUsingPredicate:predicte1];
         }
-//        if(self.myFilterStruct.eatPeople.count>0)
-//        {
-//            NSString *eatPredict=[LSBLL GetEetPopeleCountPredict:self.myFilterStruct.eatPeople];
-//            NSPredicate *predicte1=[NSPredicate predicateWithFormat:eatPredict];
-//            [_array_filter_eatSupplier filterUsingPredicate:predicte1];
-//        }
+        if(self.myFilterStruct.eatPeople.count>0)
+        {
+            NSString *eatPredict=[LSBLLEat GetEetPopeleCountPredict:self.myFilterStruct.eatPeople];
+            NSPredicate *predicte1=[NSPredicate predicateWithFormat:eatPredict];
+            [_array_filter_eatSupplier filterUsingPredicate:predicte1];
+        }
+    
         if(self.myFilterStruct.distance!=0)
         {
             if(self.myFilterStruct.distance==enum_1km)
@@ -83,7 +85,6 @@
                 //限定为1000米
                 NSLog(@"限定为2000米");
             }
-            
         }
         [_myview.view_table reloadData];
 }
@@ -120,6 +121,14 @@
     {
         return [UITableViewCell new];
     }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LSMainSupplierVC *vc=[LSMainSupplierVC new];
+    vc.mysp=_array_filter_eatSupplier[indexPath.row];
+    
+    [self.navigationController pushViewController:vc animated:NO];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
