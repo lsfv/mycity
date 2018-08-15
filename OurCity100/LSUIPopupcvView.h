@@ -14,4 +14,7 @@
 @interface LSUIPopupcvView : UIView
 @property(nonatomic)LSUIPopupView *view_main;
 @property(nonatomic)UICollectionView *cv_collection;
+@property(nonatomic)BOOL mulSelect;
+
+-(id)initWithP_MS:(BOOL)muls;
 @end

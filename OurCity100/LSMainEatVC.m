@@ -211,7 +211,7 @@
     {
         NSMutableArray<NSString*>* data=(NSMutableArray<NSString*>*)[LSBLLEat InitEatTypeDate];
         
-        LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:_myFilterStruct.eatPeople handle:self];
+        LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:_myFilterStruct.eatPeople handle:self mulsel:YES];
         vc.title=@"et";
         [self.navigationController presentViewController:vc animated:YES completion:nil];
     }

@@ -68,7 +68,7 @@
     [data addObject:@"abc4"];
     [data addObject:@"abc5"];
     
-    LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:self.preselect handle:self];
+    LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:self.preselect handle:self mulsel:false];
     [self.navigationController presentViewController:vc animated:YES completion:nil];
 }
 

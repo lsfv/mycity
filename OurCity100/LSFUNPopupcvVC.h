@@ -15,9 +15,10 @@
 @end
 
 @interface LSFUNPopupcvVC : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
--(id)initWithP:(NSMutableArray<NSString*>*)data preselect:(NSMutableArray<NSIndexPath*>*)preselect handle:(UIViewController<IcvClick> *)handle;
+-(id)initWithP:(NSMutableArray<NSString*>*)data preselect:(NSMutableArray<NSIndexPath*>*)preselect  handle:(UIViewController<IcvClick> *)handle mulsel:(BOOL)mulsel;
 @property(nonatomic)LSUIPopupcvView *myview;
 @property(nonatomic)UIViewController<IcvClick> *myhandle;
 @property(nonatomic)NSMutableArray<NSIndexPath*> *preselect;
 @property(nonatomic)NSMutableArray<NSString*> *data;
+@property(nonatomic)BOOL mulsel;
 @end

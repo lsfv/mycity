@@ -15,20 +15,21 @@
 
 @implementation LSFUNPopupcvVC
 
--(id)initWithP:(NSMutableArray<NSString*>*)data preselect:(NSMutableArray<NSIndexPath*>*)preselect  handle:(UIViewController<IcvClick> *)handle;
+-(id)initWithP:(NSMutableArray<NSString*>*)data preselect:(NSMutableArray<NSIndexPath*>*)preselect  handle:(UIViewController<IcvClick> *)handle mulsel:(BOOL)mulsel
 {
     if(self=[super init])
     {
         self.data=data;
         self.preselect=preselect;
         self.myhandle=handle;
+        self.mulsel=mulsel;
     }
     return self;
 }
 
 -(void)loadView
 {
-    self.view=self.myview=[LSUIPopupcvView new];
+    self.view=self.myview=[[LSUIPopupcvView alloc]initWithP_MS:_mulsel];
 }
 
 - (void)viewDidLoad {
@@ -90,6 +91,20 @@
     }
     
     return (UICollectionViewCell*)cell;
+}
+
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(_mulsel==false)
+    {
+        if( [collectionView cellForItemAtIndexPath:indexPath].selected)
+        {
+            [_myview.cv_collection deselectItemAtIndexPath:indexPath animated:NO];
+            [self collectionView:_myview.cv_collection didDeselectItemAtIndexPath:indexPath];
+            return false;
+        }
+    }
+    return true;
 }
 
 //auto fire event:choose
