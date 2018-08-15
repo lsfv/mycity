@@ -196,6 +196,18 @@
         _myFilterStruct.eatPeople=myChoose;
         [self RefleshData];
     }
+    else if([sender.title isEqual:@"ecategory"])
+    {
+        if(myChoose!=nil&&myChoose.count>0)
+        {
+            self.myFilterStruct.subCategory=_array_eatcategory[myChoose[0].row].cg_id;
+        }
+        else
+        {
+            self.myFilterStruct.subCategory=0;
+        }
+        [self RefleshData];
+    }
 }
 
 
@@ -205,7 +217,14 @@
     NSLog(@"tag:%i",(int)tag);
     if(tag==enum_category)
     {
-        //pop view. and then define view and protocal .and impl it in here. and then chanage filter sturct .and then reflesh.
+        if(_array_eatcategory!=nil)
+        {
+            NSMutableArray<NSString*>* data=(NSMutableArray<NSString*>*)[LSBLLEat InitEatCategory:_array_eatcategory];
+            NSMutableArray<NSIndexPath*>* data_presle=[LSBLLEat GetindePath4Select:_array_eatcategory selectindex:self.myFilterStruct.subCategory];
+            LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:data_presle handle:self mulsel:false];
+            vc.title=@"ecategory";
+            [self.navigationController presentViewController:vc animated:YES completion:nil];
+        }
     }
     else if(tag==enum_spfilter)
     {

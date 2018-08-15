@@ -17,4 +17,6 @@
 +(void)GetEatSuppliers:(NSString*)cityid handle:(ReceiveHandle)handle;
 +(NSArray<struct_btn*>*) InitBardata;
 +(NSArray<NSString*>*) InitEatTypeDate;
++(NSArray<NSString*>*) InitEatCategory:(NSMutableArray<LSModel_VCategory_All*>*)array_eatcategory;
++(NSMutableArray<NSIndexPath*>*) GetindePath4Select:(NSMutableArray<LSModel_VCategory_All*>*)array_eatcategory selectindex:(NSInteger)selectindex;
 @end
