@@ -37,6 +37,7 @@ NSString *gbl_urlUser_order=@"http://120.79.79.80:8044/MainPage.asmx/User_GetOrd
 NSString *gbl_urluser_regedit=@"http://120.79.79.80:8044/MainPage.asmx/User_RegeditUser";
 NSString *gbl_urluser_login=@"http://120.79.79.80:8044/MainPage.asmx/User_GetUserByID";
 NSString *gbl_urlcitys=@"http://120.79.79.80:8044/MainPage.asmx/Citys_AllCitys";
+NSString *gbl_dateformat=@"yyyy-MM-dd";
 
 
 

@@ -30,4 +30,12 @@
         [control sd_setImageWithURL:[NSURL URLWithString:[self GetFullPicPath:picpath]] placeholderImage:[UIImage imageNamed:@"placeholder"] options:SDWebImageRefreshCached];
     }
 }
+
++(NSString *)GetDatewithFormat:(NSString *)format mydate:(NSDate *)mydate
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:format];
+    NSString *currentDateStr = [dateFormatter stringFromDate:mydate];
+    return currentDateStr;
+}
 @end

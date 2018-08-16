@@ -127,6 +127,10 @@
 		CDD0D4AE2123DEEA00F1E9A5 /* LSMainSupplierVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4AD2123DEEA00F1E9A5 /* LSMainSupplierVC.m */; };
 		CDD0D4B22123DF4700F1E9A5 /* LSReuseSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4B12123DF4700F1E9A5 /* LSReuseSupplier.m */; };
 		CDD0D4B62124367F00F1E9A5 /* LSTabelCellGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4B52124367F00F1E9A5 /* LSTabelCellGoods.m */; };
+		CDD0D4C22124551200F1E9A5 /* LSHouseSPView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4C12124551200F1E9A5 /* LSHouseSPView.m */; };
+		CDD0D4C62124552B00F1E9A5 /* LSHouseSPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4C52124552B00F1E9A5 /* LSHouseSPVC.m */; };
+		CDD0D4CA21245E0000F1E9A5 /* LSFUNUIDatepicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4C921245E0000F1E9A5 /* LSFUNUIDatepicker.m */; };
+		CDD0D4CD21251D2200F1E9A5 /* LSBLLHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0D4CC21251D2200F1E9A5 /* LSBLLHouse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -376,6 +380,14 @@
 		CDD0D4B12123DF4700F1E9A5 /* LSReuseSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSReuseSupplier.m; sourceTree = "<group>"; };
 		CDD0D4B42124367F00F1E9A5 /* LSTabelCellGoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabelCellGoods.h; sourceTree = "<group>"; };
 		CDD0D4B52124367F00F1E9A5 /* LSTabelCellGoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabelCellGoods.m; sourceTree = "<group>"; };
+		CDD0D4C02124551200F1E9A5 /* LSHouseSPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHouseSPView.h; sourceTree = "<group>"; };
+		CDD0D4C12124551200F1E9A5 /* LSHouseSPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHouseSPView.m; sourceTree = "<group>"; };
+		CDD0D4C42124552B00F1E9A5 /* LSHouseSPVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHouseSPVC.h; sourceTree = "<group>"; };
+		CDD0D4C52124552B00F1E9A5 /* LSHouseSPVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHouseSPVC.m; sourceTree = "<group>"; };
+		CDD0D4C821245E0000F1E9A5 /* LSFUNUIDatepicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFUNUIDatepicker.h; sourceTree = "<group>"; };
+		CDD0D4C921245E0000F1E9A5 /* LSFUNUIDatepicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFUNUIDatepicker.m; sourceTree = "<group>"; };
+		CDD0D4CB21251D2200F1E9A5 /* LSBLLHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBLLHouse.h; sourceTree = "<group>"; };
+		CDD0D4CC21251D2200F1E9A5 /* LSBLLHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBLLHouse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -825,6 +837,7 @@
 		CD3FB7A0211DCE8A00933BF6 /* popupview */ = {
 			isa = PBXGroup;
 			children = (
+				CDD0D4C721245D6800F1E9A5 /* datePicker */,
 				CD219F3D211E770500B9679D /* collection */,
 				CD30E951211E604700491989 /* date */,
 				CD3FB7A1211DCFC800933BF6 /* city */,
@@ -912,9 +925,9 @@
 		CDC9285E211D1A130071D16E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CDD0D4A62123D48100F1E9A5 /* supplier */,
 				CD219FF02121798C00B9679D /* Index */,
-				CD219FFC2122A9BB00B9679D /* eat */,
+				CDD0D4B82124546800F1E9A5 /* eatcategory */,
+				CDD0D4B72124542600F1E9A5 /* house */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -1094,6 +1107,8 @@
 				CD219FFA21228B7300B9679D /* LSBLLCategory.m */,
 				CD21A0092122CE2300B9679D /* LSBLLEat.h */,
 				CD21A00A2122CE2300B9679D /* LSBLLEat.m */,
+				CDD0D4CB21251D2200F1E9A5 /* LSBLLHouse.h */,
+				CDD0D4CC21251D2200F1E9A5 /* LSBLLHouse.m */,
 			);
 			name = BLL;
 			sourceTree = "<group>";
@@ -1225,6 +1240,83 @@
 			name = goodscell;
 			sourceTree = "<group>";
 		};
+		CDD0D4B72124542600F1E9A5 /* house */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4BB212454B900F1E9A5 /* goods */,
+				CDD0D4BA2124548300F1E9A5 /* supplier */,
+			);
+			name = house;
+			sourceTree = "<group>";
+		};
+		CDD0D4B82124546800F1E9A5 /* eatcategory */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4A62123D48100F1E9A5 /* supplier */,
+				CD219FFC2122A9BB00B9679D /* eat */,
+			);
+			name = eatcategory;
+			sourceTree = "<group>";
+		};
+		CDD0D4BA2124548300F1E9A5 /* supplier */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4BE212454E400F1E9A5 /* view */,
+				CDD0D4BF212454EA00F1E9A5 /* control */,
+			);
+			name = supplier;
+			sourceTree = "<group>";
+		};
+		CDD0D4BB212454B900F1E9A5 /* goods */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4BD212454DE00F1E9A5 /* view */,
+				CDD0D4BC212454D600F1E9A5 /* control */,
+			);
+			name = goods;
+			sourceTree = "<group>";
+		};
+		CDD0D4BC212454D600F1E9A5 /* control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		CDD0D4BD212454DE00F1E9A5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		CDD0D4BE212454E400F1E9A5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4C02124551200F1E9A5 /* LSHouseSPView.h */,
+				CDD0D4C12124551200F1E9A5 /* LSHouseSPView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		CDD0D4BF212454EA00F1E9A5 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4C42124552B00F1E9A5 /* LSHouseSPVC.h */,
+				CDD0D4C52124552B00F1E9A5 /* LSHouseSPVC.m */,
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		CDD0D4C721245D6800F1E9A5 /* datePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0D4C821245E0000F1E9A5 /* LSFUNUIDatepicker.h */,
+				CDD0D4C921245E0000F1E9A5 /* LSFUNUIDatepicker.m */,
+			);
+			name = datePicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1324,6 +1416,7 @@
 				CD219F82212110FB00B9679D /* VSupplier_ALLCategory_Base.m in Sources */,
 				CD3FAE4A211DC10400933BF6 /* LSTESTMYUIView.m in Sources */,
 				CD3FAE1F211D8E9300933BF6 /* ViewController+MASAdditions.m in Sources */,
+				CDD0D4CA21245E0000F1E9A5 /* LSFUNUIDatepicker.m in Sources */,
 				CD219F7B212110FA00B9679D /* VCategory_Father.m in Sources */,
 				CD3FAE2C211D8E9300933BF6 /* SDWebImageCodersManager.m in Sources */,
 				CD3FAE12211D8E9300933BF6 /* UIScrollView+MJRefresh.m in Sources */,
@@ -1339,6 +1432,7 @@
 				CD3FAE18211D8E9300933BF6 /* MASConstraintMaker.m in Sources */,
 				CDC9287C211D37FB0071D16E /* LSBaseVC.m in Sources */,
 				CDD0D4AB2123DED200F1E9A5 /* LSMainSupplierView.m in Sources */,
+				CDD0D4C62124552B00F1E9A5 /* LSHouseSPVC.m in Sources */,
 				CDC92879211D28F30071D16E /* LSModel_LocalStruct.m in Sources */,
 				CD3FB79E211DCE7300933BF6 /* LSUIPopupView.m in Sources */,
 				CD219F5D21210CCB00B9679D /* LSTESTDataVC.m in Sources */,
@@ -1376,6 +1470,7 @@
 				CDD0D4B22123DF4700F1E9A5 /* LSReuseSupplier.m in Sources */,
 				CD3FAE05211D8E9200933BF6 /* MJRefreshAutoGifFooter.m in Sources */,
 				CD3FAE22211D8E9300933BF6 /* FLAnimatedImageView+WebCache.m in Sources */,
+				CDD0D4CD21251D2200F1E9A5 /* LSBLLHouse.m in Sources */,
 				CDC9289B211D480E0071D16E /* LSBLLLocalData.m in Sources */,
 				CD3FAE1D211D8E9300933BF6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CD219F3C211E6F4300B9679D /* LSFUNUIPopupDateVC.m in Sources */,
@@ -1400,6 +1495,7 @@
 				CD3FAE3B211D8E9300933BF6 /* UIImage+WebP.m in Sources */,
 				CD3FAE26211D8E9300933BF6 /* NSImage+WebCache.m in Sources */,
 				CD219F8B2121211900B9679D /* LSBLLSupplier.m in Sources */,
+				CDD0D4C22124551200F1E9A5 /* LSHouseSPView.m in Sources */,
 				CD3FAE00211D8E9200933BF6 /* MJRefreshAutoFooter.m in Sources */,
 				CD3FAE03211D8E9200933BF6 /* MJRefreshFooter.m in Sources */,
 				CD219F9221214C4F00B9679D /* LSBLLCommon.m in Sources */,

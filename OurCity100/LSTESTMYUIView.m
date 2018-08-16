@@ -10,7 +10,7 @@
 
 @implementation LSTESTMYUIView
 
--(id)init
+-(id)initWithhandle:(UIViewController<IdpClick,iDatePicker>*)vc
 {
     if(self=[super init])
     {
@@ -24,6 +24,9 @@
         
         _btns_test=[[LSFUNUIRowButtons alloc]initWithBtnParemater_left:10 paddingright:10 btnwidth:60 bgcolor:nil];
         [self addSubview:_btns_test];
+        
+        _dp_test=[[LSFUNUIDatepicker alloc]initWithhandle:vc];
+        [self addSubview:_dp_test];
     }
     return self;
 }
@@ -59,6 +62,14 @@
         make.left.offset(paddingleft);
         make.right.offset(-paddingright);
         make.height.equalTo(@30);
+    }];
+    
+    [self.dp_test mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_btns_test.mas_bottom).offset(5);
+        make.left.offset(paddingleft);
+        make.right.offset(-paddingright);
+        make.height.equalTo( [LSFUNUIDatepicker myHeight] );
+
     }];
     
     

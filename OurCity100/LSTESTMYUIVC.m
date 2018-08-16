@@ -12,19 +12,23 @@
 #import "LSGBLVariable.h"
 #import "LSFUNPopupcvVC.h"
 #import "LSBLLSupplier.h"
+#import "LSBLLCommon.h"
 
 @interface LSTESTMYUIVC ()
 @property(nonatomic)NSDate *myfrom;
 @property(nonatomic)NSDate *myto;
 @property(nonatomic)NSMutableArray<NSIndexPath *> *preselect;
 @property(nonatomic)NSArray<struct_btn*>* filterdata;
+
+@property(nonatomic)NSDate *myfrom2;
+@property(nonatomic)NSDate *myto2;
 @end
 
 @implementation LSTESTMYUIVC
 
 -(void)loadView
 {
-    self.view=_myview=[LSTESTMYUIView new];
+    self.view=_myview=[[LSTESTMYUIView alloc]initWithhandle:self];
 }
 
 
@@ -35,6 +39,12 @@
     [self Setupcv];
     [self SetupRBtns];
     
+}
+
+-(void)OnClickBtns_updateParemeters:(NSDate *__autoreleasing *)indate outdate:(NSDate *__autoreleasing *)outdate
+{
+    *indate=self.myfrom2;
+    *outdate=self.myto2;
 }
 
 -(void)SetupRBtns
@@ -110,7 +120,17 @@
 
 -(void)OnClickOK:(NSDate *)timefrom timeto:(NSDate *)timeto sender:(LSFUNUIPopupDateVC *)sender
 {
-    _myfrom=timefrom;
-    _myto=timeto;
+    if(sender==_myview.dp_test.vc)
+    {
+        _myfrom2=timefrom;
+        _myto2=timeto;
+        [_myview.dp_test.btn_intime setTitle:[LSBLLCommon GetDatewithFormat:gbl_dateformat mydate:_myfrom2] forState:UIControlStateNormal];
+        [_myview.dp_test.btn_outtime setTitle:[LSBLLCommon GetDatewithFormat:gbl_dateformat mydate:_myto2] forState:UIControlStateNormal];
+    }
+    else
+    {
+        _myfrom=timefrom;
+        _myto=timeto;
+    }
 }
 @end

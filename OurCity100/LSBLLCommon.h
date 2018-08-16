@@ -11,4 +11,5 @@
 @interface LSBLLCommon : NSObject
 +(NSString*)GetFullPicPath:(NSString*)picpach;
 +(void)LoadHttpPicDefault:(NSString*)picpath control:(id)control;
++(NSString *)GetDatewithFormat:(NSString *)format mydate:(NSDate *)mydate;
 @end

@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OurCity100/LSTESTMYUIVC.m"
-            timestampString = "555822968.90089"
+            timestampString = "556067552.523175"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-OnClickOK:sender:"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "-SetupDate"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OurCity100/LSTESTMYUIVC.m"
-            timestampString = "555822968.90089"
+            timestampString = "556067552.523175"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-NumberOfBtns:"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-ButtonForIndex:btnindex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

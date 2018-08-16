@@ -32,6 +32,7 @@ extern NSString *gbl_urlUser_order;
 extern NSString *gbl_urluser_regedit;
 extern NSString *gbl_urluser_login;
 extern NSString *gbl_urlcitys;
+extern NSString *gbl_dateformat;
 
 
 //enum
