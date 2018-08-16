@@ -45,12 +45,7 @@ enum ET_filterType
     enum_orderby
 };
 
-enum ET_distanceType
-{
-    enum_1km=1,
-    enum_2km=2,
-    enum_3km=3
-};
+
 
 enum ET_houseType
 {
@@ -59,22 +54,7 @@ enum ET_houseType
     enum_2b2p,
     enum_2b4p
 };
-enum ET_eatType
-{
-    enum_1p=1,
-    enum_2p,
-    enum_35p,
-    enum_510p,
-    enum_more10
-};
 
-enum ET_orderStatus
-{
-    enum_nopay=1,
-    enum_nouse,
-    enum_usesome,
-    enum_used
-};
 
 
 

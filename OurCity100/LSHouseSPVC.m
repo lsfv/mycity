@@ -119,7 +119,7 @@
     NSLog(@"tag:%i",(int)tag);
     if(tag==enum_spfilter)
     {
-        NSMutableArray<struct_btn*>* data=(NSMutableArray<struct_btn*>*)[LSBLLHouse InitHouseTypeData];
+        NSMutableArray<NSString*>* data=(NSMutableArray<NSString*>*)[LSBLLHouse InitHouseTypeData];
         NSMutableArray<NSIndexPath*>* preselect=[LSBLLHouse GetindexPath4Select_housetype:data selectindex:_myFilterStruct.housePeople];
         LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:preselect handle:self mulsel:NO];
         vc.title=@"housetype";

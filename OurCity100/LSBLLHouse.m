@@ -39,26 +39,9 @@
 }
 
 
-+(NSArray<struct_btn*>*) InitHouseTypeData
++(NSArray<NSString*>*) InitHouseTypeData
 {
-    struct_btn *btn2=[struct_btn new];
-    btn2.btntag=enum_1b1p;
-    btn2.btntext=@"单人房";
-    
-    struct_btn *btn3=[struct_btn new];
-    btn3.btntag=enum_1b2p;
-    btn3.btntext=@"双人大床";
-    
-    struct_btn *btn4=[struct_btn new];
-    btn4.btntag=enum_2b2p;
-    btn4.btntext=@"双人房";
-    
-    struct_btn *btn5=[struct_btn new];
-    btn5.btntag=enum_2b4p;
-    btn5.btntext=@"加大双床";
-    
-    
-    NSArray<struct_btn*>* ret=@[btn2,btn3,btn4,btn5];
+    NSArray<NSString*>* ret=@[@"单人房",@"双人房",@"双人房",@"加大双床"];
     return ret;
 }
 

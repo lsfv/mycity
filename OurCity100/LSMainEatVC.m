@@ -75,16 +75,16 @@
     
         if(self.myFilterStruct.distance!=0)
         {
-            if(self.myFilterStruct.distance==enum_1km)
-            {
-                //限定为1000米
-                NSLog(@"限定为1000米");
-            }
-            else if(self.myFilterStruct.distance==enum_2km)
-            {
-                //限定为1000米
-                NSLog(@"限定为2000米");
-            }
+//            if(self.myFilterStruct.distance==enum_1km)
+//            {
+//                //限定为1000米
+//                NSLog(@"限定为1000米");
+//            }
+//            else if(self.myFilterStruct.distance==enum_2km)
+//            {
+//                //限定为1000米
+//                NSLog(@"限定为2000米");
+//            }
         }
         [_myview.view_table reloadData];
 }
