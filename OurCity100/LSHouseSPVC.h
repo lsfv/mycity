@@ -12,8 +12,9 @@
 #import "XRCarouselView.h"
 #import "LSFUNUIRowButtons.h"
 #import "modelsHeads.h"
+#import "LSFUNPopupcvVC.h"
 
-@interface LSHouseSPVC : LSBaseVC<IdpClick,iDatePicker,UITableViewDelegate,UITableViewDataSource,XRCarouselViewDelegate,IRowBtnsData>
+@interface LSHouseSPVC : LSBaseVC<IdpClick,iDatePicker,UITableViewDelegate,UITableViewDataSource,XRCarouselViewDelegate,IRowBtnsData,IcvClick>
 @property(nonatomic)LSHouseSPView *myview;
 @property(nonatomic)NSInteger myCategory;
 @end

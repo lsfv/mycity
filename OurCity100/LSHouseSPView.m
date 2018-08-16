@@ -15,7 +15,7 @@
 {
     if(self=[super init])
     {
-        _view_searchbar=[LSReuseSearchBar new];
+        _view_searchbar=[[LSReuseSearchBar alloc]initWithP_currentvc:handle];
         _view_bigpic=[XRCarouselView new];
         _view_date=[[LSFUNUIDatepicker alloc]initWithhandle:handle];
         _view_filter=[[LSFUNUIRowButtons alloc] initWithBtnParemater_left:paddingleft paddingright:paddingright btnwidth:60 bgcolor:nil];

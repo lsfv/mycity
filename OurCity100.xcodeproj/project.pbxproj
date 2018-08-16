@@ -510,13 +510,13 @@
 			name = control;
 			sourceTree = "<group>";
 		};
-		CD219FFC2122A9BB00B9679D /* eat */ = {
+		CD219FFC2122A9BB00B9679D /* supplier */ = {
 			isa = PBXGroup;
 			children = (
 				CD219FFD2122A9C100B9679D /* view */,
 				CD219FFE2122A9CA00B9679D /* control */,
 			);
-			name = eat;
+			name = supplier;
 			sourceTree = "<group>";
 		};
 		CD219FFD2122A9C100B9679D /* view */ = {
@@ -1195,13 +1195,13 @@
 			name = localstruct;
 			sourceTree = "<group>";
 		};
-		CDD0D4A62123D48100F1E9A5 /* supplier */ = {
+		CDD0D4A62123D48100F1E9A5 /* goods */ = {
 			isa = PBXGroup;
 			children = (
 				CDD0D4A82123D49700F1E9A5 /* view */,
 				CDD0D4A72123D49000F1E9A5 /* control */,
 			);
-			name = supplier;
+			name = goods;
 			sourceTree = "<group>";
 		};
 		CDD0D4A72123D49000F1E9A5 /* control */ = {
@@ -1243,8 +1243,8 @@
 		CDD0D4B72124542600F1E9A5 /* house */ = {
 			isa = PBXGroup;
 			children = (
-				CDD0D4BB212454B900F1E9A5 /* goods */,
 				CDD0D4BA2124548300F1E9A5 /* supplier */,
+				CDD0D4BB212454B900F1E9A5 /* goods */,
 			);
 			name = house;
 			sourceTree = "<group>";
@@ -1252,8 +1252,8 @@
 		CDD0D4B82124546800F1E9A5 /* eatcategory */ = {
 			isa = PBXGroup;
 			children = (
-				CDD0D4A62123D48100F1E9A5 /* supplier */,
-				CD219FFC2122A9BB00B9679D /* eat */,
+				CDD0D4A62123D48100F1E9A5 /* goods */,
+				CD219FFC2122A9BB00B9679D /* supplier */,
 			);
 			name = eatcategory;
 			sourceTree = "<group>";

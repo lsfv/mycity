@@ -25,9 +25,7 @@
 
 
 @implementation struct_eatSearch
-
 @end
 
 @implementation struct_houseSearch
-
 @end

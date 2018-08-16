@@ -38,4 +38,17 @@
     NSString *currentDateStr = [dateFormatter stringFromDate:mydate];
     return currentDateStr;
 }
+
++(NSMutableArray<NSString*>*) GetBtnText:(NSMutableArray<struct_btn*>*)GetBtnText
+{
+    NSMutableArray<NSString*>* ret=[NSMutableArray<NSString*> new];
+    for(int i=0;i<GetBtnText.count;i++)
+    {
+        [ret addObject:GetBtnText[i].btntext];
+    }
+    
+    return ret;
+}
+
+
 @end

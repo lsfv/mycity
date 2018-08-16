@@ -14,5 +14,5 @@ typedef void (^ReceiveCategoryHandle)(NSMutableArray<LSModel_VCategory_All*> *da
 @interface LSBLLCategory : NSObject
 +(void)GetMainCategory:(ReceiveCategoryHandle)handle;
 +(void)GetSubCategory:(NSInteger)fatherid handle:(ReceiveHandle)handle;
-+(NSString *)GetDatewithFormat:(NSString *)format mydate:(NSDate *)mydate;
+
 @end

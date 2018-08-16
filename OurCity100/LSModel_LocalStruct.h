@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+
 @interface struct_btn : NSObject
 @property(nonatomic) NSInteger btntag;
 @property(nonatomic) NSString *btntext;

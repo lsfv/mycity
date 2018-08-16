@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LSGBLVariable.h"
 
 @interface LSBLLCommon : NSObject
 +(NSString*)GetFullPicPath:(NSString*)picpach;
 +(void)LoadHttpPicDefault:(NSString*)picpath control:(id)control;
 +(NSString *)GetDatewithFormat:(NSString *)format mydate:(NSDate *)mydate;
++(NSMutableArray<NSString*>*) GetBtnText:(NSMutableArray<struct_btn*>*)GetBtnText;
 @end

@@ -15,6 +15,7 @@
 #import "LSBLLCommon.h"
 #import "LSBLLCategory.h"
 #import "LSMainEatVC.h"
+#import "LSHouseSPVC.h"
 
 @interface LSMainIndexVC ()
 @property(nonnull) NSMutableArray<LSModel_VCategory_All*>* data_category;
@@ -118,6 +119,13 @@
         {
             LSMainEatVC *vc=[[LSMainEatVC alloc]init];
             vc.mycgid=1;
+            [self.navigationController pushViewController:vc animated:NO];
+            break;
+        }
+        case 2://house
+        {
+            LSHouseSPVC *vc=[[LSHouseSPVC alloc]init];
+            vc.myCategory=2;
             [self.navigationController pushViewController:vc animated:NO];
             break;
         }
