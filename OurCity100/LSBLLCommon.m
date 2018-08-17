@@ -39,16 +39,83 @@
     return currentDateStr;
 }
 
-+(NSMutableArray<NSString*>*) GetBtnText:(NSMutableArray<struct_btn*>*)GetBtnText
+//test
++(NSMutableArray<NSString*>*)GetArrayValueFromKeyvalue:(NSArray<struct_keyValue*>*)data
 {
     NSMutableArray<NSString*>* ret=[NSMutableArray<NSString*> new];
-    for(int i=0;i<GetBtnText.count;i++)
-    {
-        [ret addObject:GetBtnText[i].btntext];
-    }
     
+    for(int i=0;i<data.count;i++)
+    {
+        [ret addObject:data[i].value];
+    }
     return ret;
 }
 
++(NSMutableArray<NSIndexPath*>*)GetIndexPathFromArraykey:(NSMutableArray<NSNumber*>*)keyarray   data:(NSArray<struct_keyValue*>*) data
+{
+    NSMutableArray<NSIndexPath*>* ret=nil;
+    if(data!=nil && keyarray!=nil)
+    {
+        ret=[NSMutableArray<NSIndexPath*> new];
+        for(int i=0;i<keyarray.count;i++)
+        {
+            NSNumber* tempvalue=keyarray[i];
+            
+            for(int j=0;j<data.count;j++)
+            {
+                if([tempvalue isEqualToNumber:data[j].key])
+                {
+                    NSIndexPath *tempindexpath=[NSIndexPath indexPathForRow:j inSection:0 ];
+                    [ret addObject:tempindexpath];
+                    break;
+                }
+            }
+        }
+    }
+    return ret;
+}
+
+
+
++(NSMutableArray<NSIndexPath*>*)GetIndexPathFromSinglekey:(NSNumber*)key   data:(NSArray<struct_keyValue*>*) data
+{
+    NSMutableArray<NSIndexPath*>* ret=nil;
+    if(data!=nil && key!=nil)
+    {
+        ret=[NSMutableArray<NSIndexPath*> new];
+            for(int j=0;j<data.count;j++)
+            {
+                if([key isEqualToNumber:data[j].key])
+                {
+                    NSIndexPath *tempindexpath=[NSIndexPath indexPathForRow:j inSection:0 ];
+                    [ret addObject:tempindexpath];
+                    break;
+                }
+            }
+    }
+    return ret;
+}
+
+
+
+
+
++(NSMutableArray<NSNumber*>*)GetArraykeyFromIndexpath:(NSMutableArray<NSIndexPath*>*)indexpath  data:(NSArray<struct_keyValue*>*) data
+{
+    NSMutableArray<NSNumber*>* ret=nil;
+    if(indexpath!=nil && data!=nil)
+    {
+        ret =[NSMutableArray<NSNumber*> new];
+        for(int i=0;i<indexpath.count;i++)
+        {
+            NSInteger row=indexpath[i].row;
+            if(row<data.count)
+            {
+                [ret addObject:data[row].key];
+            }
+        }
+    }
+    return ret;
+}
 
 @end

@@ -49,6 +49,7 @@ enum ET_filterType
 
 enum ET_houseType
 {
+    enum_ht_nil=0,
     enum_1b1p=1,
     enum_1b2p,
     enum_2b2p,

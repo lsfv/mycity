@@ -10,6 +10,12 @@
 #import <UIKit/UIKit.h>
 
 
+@interface struct_keyValue : NSObject
+@property(nonatomic)NSString* value;
+@property(nonatomic)NSNumber* key;
+@end
+
+
 @interface struct_btn : NSObject
 @property(nonatomic) NSInteger btntag;
 @property(nonatomic) NSString *btntext;

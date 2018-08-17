@@ -16,6 +16,9 @@
 @interface LSBLLHouse : NSObject
 +(void)GetHouseSuppliers:(NSString*)cityid indate:(NSString*)indate outdate:(NSString*)outdate handle:(ReceiveHandle)handle;
 +(NSArray<struct_btn*>*) InitBardataHouse;
-+(NSArray<NSString*>*) InitHouseTypeData;
+
 +(NSMutableArray<NSIndexPath*>*) GetindexPath4Select_housetype:(NSMutableArray<NSString*>*)array_HouseType selectindex:(NSInteger)selectindex;
+//test
++(NSArray<struct_keyValue*>*)InitTypeData_House;
+
 @end

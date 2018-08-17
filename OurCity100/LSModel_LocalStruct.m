@@ -8,6 +8,9 @@
 
 #import "LSModel_LocalStruct.h"
 
+@implementation struct_keyValue
+@end
+
 @implementation struct_btn
 @end
 

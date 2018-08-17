@@ -81,14 +81,17 @@
 {
     if([sender.title isEqual:@"housetype"])
     {
-        if(myChoose!=nil&&myChoose.count>0)
+        NSArray<struct_keyValue*>* data=[LSBLLHouse InitTypeData_House];
+        NSMutableArray<NSNumber*>* ret=[LSBLLCommon GetArraykeyFromIndexpath:myChoose data:data];
+        if(ret!=nil && ret.count>0)
         {
-            _myFilterStruct.housePeople=myChoose[0].row;
+            _myFilterStruct.housePeople=ret[0].integerValue;
         }
         else
         {
-            _myFilterStruct.housePeople=-1;
+            _myFilterStruct.housePeople=enum_ht_nil;
         }
+
         [self RefleshData];
     }
     
@@ -119,9 +122,10 @@
     NSLog(@"tag:%i",(int)tag);
     if(tag==enum_spfilter)
     {
-        NSMutableArray<NSString*>* data=(NSMutableArray<NSString*>*)[LSBLLHouse InitHouseTypeData];
-        NSMutableArray<NSIndexPath*>* preselect=[LSBLLHouse GetindexPath4Select_housetype:data selectindex:_myFilterStruct.housePeople];
-        LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:preselect handle:self mulsel:NO];
+        NSArray<struct_keyValue*>* data=[LSBLLHouse InitTypeData_House];
+        NSMutableArray<NSString*>* displayarray=[LSBLLCommon GetArrayValueFromKeyvalue:data];
+        NSMutableArray<NSIndexPath*>* preselect=[LSBLLCommon GetIndexPathFromSinglekey:[NSNumber numberWithInteger:_myFilterStruct.housePeople] data:data];
+        LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:displayarray preselect:preselect handle:self mulsel:NO];
         vc.title=@"housetype";
         [self.navigationController presentViewController:vc animated:YES completion:nil];
     }

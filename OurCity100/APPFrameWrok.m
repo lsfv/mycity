@@ -51,7 +51,7 @@ NSString *gbl_dateformat=@"yyyy-MM-dd";
 -(void)SetupApp:(UIWindow *)appWindow
 {
     //布局程序框架:tabbar+navinationcontrol
-    self.isTest=true;
+    self.isTest=false;
     UITabBarController *mytabController=[UITabBarController new];//tabcontrol
     NSMutableArray<UINavigationController*> *mynavigation=[self InitNavigationControls];
     mytabController.viewControllers=mynavigation;

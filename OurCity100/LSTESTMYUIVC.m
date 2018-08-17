@@ -13,11 +13,13 @@
 #import "LSFUNPopupcvVC.h"
 #import "LSBLLSupplier.h"
 #import "LSBLLCommon.h"
+#import "LSBLLHouse.h"
 
 @interface LSTESTMYUIVC ()
 @property(nonatomic)NSDate *myfrom;
 @property(nonatomic)NSDate *myto;
-@property(nonatomic)NSMutableArray<NSIndexPath *> *preselect;
+//@property(nonatomic)NSMutableArray<NSIndexPath *> *preselect;
+@property(nonatomic)NSMutableArray<NSNumber*> *preselect_number;
 @property(nonatomic)NSArray<struct_btn*>* filterdata;
 
 @property(nonatomic)NSDate *myfrom2;
@@ -38,7 +40,26 @@
     [self SetupDate];
     [self Setupcv];
     [self SetupRBtns];
-    
+}
+
+
+-(void)Testkeyvalue
+{
+//    NSArray<struct_keyValue*>* data=[LSBLLHouse InitTypeData_House];
+//    NSArray<NSString*> *arraydisplay=[LSBLLCommon GetArrayValueFromKeyvalue:data];
+//    
+//    NSMutableArray<NSIndexPath*>* tempret=[NSMutableArray<NSIndexPath*> new];
+//    
+//    [tempret addObject:[NSIndexPath indexPathForRow:1 inSection:0]];
+//    [tempret addObject:[NSIndexPath indexPathForRow:6 inSection:0]];
+//    
+//    NSMutableArray<NSNumber*>* mysave=[LSBLLCommon GetArraykeyFromIndexpath:tempret data:data];
+//    
+//    
+//    NSMutableArray<NSIndexPath*>* convertret=[LSBLLCommon GetIndexPathFromArraykey:mysave data:data];
+//    
+//    //1.nil.2.beyond.
+//    int a=5;
 }
 
 -(void)OnClickBtns_updateParemeters:(NSDate *__autoreleasing *)indate outdate:(NSDate *__autoreleasing *)outdate
@@ -64,6 +85,7 @@
     return ret;
 }
 
+//cv
 -(void)Setupcv
 {
     [self.myview.btn_cv addTarget:self action:@selector(Popupcv) forControlEvents:UIControlEventTouchUpInside];
@@ -71,21 +93,22 @@
 
 -(void)Popupcv
 {
-    NSMutableArray<NSString*>* data=[NSMutableArray new];
-    [data addObject:@"abc1"];
-    [data addObject:@"abc2"];
-    [data addObject:@"abc3"];
-    [data addObject:@"abc4"];
-    [data addObject:@"abc5"];
+    NSArray<struct_keyValue*>* data=[LSBLLHouse InitTypeData_House];
+    NSArray<NSString*> *arraydisplay=[LSBLLCommon GetArrayValueFromKeyvalue:data];
+    NSMutableArray<NSIndexPath*>* preindex=[LSBLLCommon GetIndexPathFromArraykey:_preselect_number data:data];
     
-    LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:data preselect:self.preselect handle:self mulsel:false];
+    LSFUNPopupcvVC *vc=[[LSFUNPopupcvVC alloc]initWithP:(NSMutableArray<NSString*>*)arraydisplay preselect:preindex handle:self mulsel:YES];
     [self.navigationController presentViewController:vc animated:YES completion:nil];
 }
 
 -(void)OnCVClickOK:(NSMutableArray<NSIndexPath *> *)myChoose sender:(LSFUNPopupcvVC *)sender
 {
-    self.preselect=myChoose;
+    NSArray<struct_keyValue*>* data=[LSBLLHouse InitTypeData_House];
+    NSMutableArray<NSNumber*>* ret=[LSBLLCommon GetArraykeyFromIndexpath:myChoose data:data];
+    self.preselect_number=ret;
 }
+//cv end
+
 
 -(void)SetupBtncity
 {

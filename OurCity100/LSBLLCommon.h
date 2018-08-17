@@ -11,5 +11,9 @@
 +(NSString*)GetFullPicPath:(NSString*)picpach;
 +(void)LoadHttpPicDefault:(NSString*)picpath control:(id)control;
 +(NSString *)GetDatewithFormat:(NSString *)format mydate:(NSDate *)mydate;
-+(NSMutableArray<NSString*>*) GetBtnText:(NSMutableArray<struct_btn*>*)GetBtnText;
+
++(NSMutableArray<NSString*>*)GetArrayValueFromKeyvalue:(NSArray<struct_keyValue*>*)data;
++(NSMutableArray<NSIndexPath*>*)GetIndexPathFromSinglekey:(NSNumber*)key   data:(NSArray<struct_keyValue*>*) data;
++(NSMutableArray<NSIndexPath*>*)GetIndexPathFromArraykey:(NSMutableArray<NSNumber*>*)keyarray   data:(NSArray<struct_keyValue*>*) data;
++(NSMutableArray<NSNumber*>*)GetArraykeyFromIndexpath:(NSMutableArray<NSIndexPath*>*)indexpath  data:(NSArray<struct_keyValue*>*) data;
 @end

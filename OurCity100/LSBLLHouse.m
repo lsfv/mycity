@@ -38,14 +38,6 @@
     return ret;
 }
 
-
-+(NSArray<NSString*>*) InitHouseTypeData
-{
-    NSArray<NSString*>* ret=@[@"单人房",@"双人房",@"双人房",@"加大双床"];
-    return ret;
-}
-
-
 +(NSMutableArray<NSIndexPath*>*) GetindexPath4Select_housetype:(NSMutableArray<NSString*>*)array_HouseType selectindex:(NSInteger)selectindex
 {
     NSMutableArray<NSIndexPath*>* ret=[NSMutableArray<NSIndexPath*> new];
@@ -54,5 +46,32 @@
     
     return ret;
 }
+
+
+//test
++(NSArray<struct_keyValue*>*)InitTypeData_House
+{
+    NSArray<struct_keyValue*>* ret=nil;
+    
+    struct_keyValue *tempItem1=[struct_keyValue new];
+    tempItem1.value=@"单人房";
+    tempItem1.key=[NSNumber numberWithInteger:enum_1b1p];
+    
+    struct_keyValue *tempItem2=[struct_keyValue new];
+    tempItem2.value=@"双人房";
+    tempItem2.key=[NSNumber numberWithInteger:enum_1b2p];
+    
+    struct_keyValue *tempItem3=[struct_keyValue new];
+    tempItem3.value=@"双人床";
+    tempItem3.key=[NSNumber numberWithInteger:enum_2b2p];
+    
+    struct_keyValue *tempItem4=[struct_keyValue new];
+    tempItem4.value=@"加大双床";
+    tempItem4.key=[NSNumber numberWithInteger:enum_2b4p];
+    
+    ret=@[tempItem1,tempItem2,tempItem3,tempItem4];
+    return ret;
+}
+
 
 @end
